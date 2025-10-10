@@ -710,6 +710,26 @@
   "categoria": "Servicios",
   "haceEnvios": false,
   "urgencias": false
+},
+{
+  "nombre": "Zanito",
+  "direccion": "38 e/ 23 y 24",
+  "telefono": "2473460113",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/ZANITO/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/ZANITO/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/ZANITO/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/ZANITO/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/ZANITO/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/ZANITO/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/es_zanito/",
+  "descripcionCorta": "Huevos libres, yerba orgánica y miel pura — productos naturales con envíos sin cargo 🌿",
+  "descripcionLarga": "Estela nos ofrece una propuesta natural, consciente y llena de sabor. En su emprendimiento, combina la frescura de huevos de gallinas libres, la energía auténtica de una yerba orgánica, y la dulzura incomparable de la miel pura, productos elegidos con amor y respeto por la naturaleza. Además, suma accesorios prácticos como hueveras deslizantes y omeleteras para microondas, ideales para hacer tu cocina más cómoda y sustentable.\nCon envíos sin cargo y atención personalizada, Estela acerca calidad, bienestar y conciencia ecológica a tu mesa. Visitá su espacio y descubrí todo lo que la naturaleza tiene para ofrecerte.\n",
+  "categoria": "Gastronomico",
+  "haceEnvios": true,
+  "urgencias": false
 }
 
 
