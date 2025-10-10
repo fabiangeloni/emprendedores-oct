@@ -41,6 +41,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 html {
     height: 100%;
@@ -51,7 +52,7 @@ body{
     color: #333;
     line-height: 1.6;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'inter', sans-serif, arial;
 }
 
 /* Prevenir scroll cuando el menú está abierto */
@@ -62,7 +63,7 @@ body.menu-open {
 .contenedor-grid{
     display: grid;
     grid-template-columns: 0fr 4fr;
-    background-color: #fff;
+    background-color: white;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "header header"
@@ -86,10 +87,6 @@ body.menu-open {
     box-shadow: var(--sombra-sm);
     /* Transición suave */
     transition: all var(--transition);
-}
-
-#header.scrolled {
-  background-color: rgba(255, 255, 255, 0.85);
 }
 
     /* Estado cuando se hace scroll */
@@ -201,7 +198,6 @@ body.menu-open {
     border-radius: 50px;
     overflow: hidden;
     transition: all var(--transition);
-    border: 1px solid #ddd;
 }
 
     .search-box:focus-within {
@@ -212,8 +208,8 @@ body.menu-open {
 .search-input {
     border: none;
     background: transparent;
-    padding: 0.7rem 1rem;
-    width: 420px;
+    padding: 0.4rem 1rem;
+    min-width: 320px;
     font-size: 0.95rem;
     outline: none;
     font-family: inherit;
@@ -223,7 +219,7 @@ body.menu-open {
     background: var(--gradiente);
     color: var(--color-blanco);
     border: none;
-    padding: 1rem 1.2rem;
+    padding: 0.7rem 1.2rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -290,10 +286,6 @@ body.menu-open {
         transform: translateY(-2px);
         box-shadow: var(--sombra-lg);
     }
-
-.filtro-btn p{font-size: 0.65rem;}
-
-.filtro-btn li a p{text-decoration: none !important;}
 
 /* Botón hamburguesa (oculto en desktop) */
 .btn-hamburger {
@@ -428,7 +420,7 @@ body.menu-open {
    RESPONSIVE - TABLET (max-width: 992px)
    ======================================== */
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width:769) and  (max-width: 992px) {
     .header-wrapper {
         padding: 1rem 1.5rem;
     }
@@ -618,6 +610,7 @@ body.menu-open {
 
 main{
     grid-area: main;
+    padding: 1rem;
     background-color: #fff;
 }   
 main h2{
@@ -648,26 +641,23 @@ a:hover{
 .main-layout {
     display: flex;
     max-width: 1200px;
-    margin: 0px auto;
+    margin: 20px auto;
     min-height: 80vh;
     position: relative;
     background: white;
-    z-index: 1;
 }
 
 .sidebar-filtros-iconos {
     position: sticky;
-    top: 120px;
-    /* left: 0; */
-    width: auto;
-    padding: 2px 0;
+    top: 100px;
+    left: 0;
+    width: 60px;
+    padding: 10px 0;
     background-color: #222;
-    z-index: 1000;
-    height: auto;
+    z-index: 1;
+    height: 420px;
     border-radius: 0 5px 5px 0;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-    height: 440px;
-    
 }
 
 /* Estilos de la lista y los íconos */
@@ -679,16 +669,15 @@ a:hover{
 }
 
 .sidebar-filtros-iconos li {
-    margin: 10px auto;
+    margin-bottom: 10px;
 }
 
 .sidebar-filtros-iconos a {
     display: block;
-    padding: 3px 8px;
+    padding: 10px;
     color: #fff;
     font-size: 24px;
     transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
 }
 
 .sidebar-filtros-iconos a:hover {
@@ -721,7 +710,6 @@ a:hover{
 
 h2 {
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .tarjeta {
@@ -729,17 +717,16 @@ h2 {
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     padding: 20px;
-    width: 300px;
-    height: 400px;
+    width: 100%;
     max-width: 280px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     position: relative;
     flex: 1 1 250px;
 }
 
 .tarjeta:hover {
-    transform: translateY(-2px);
+    transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
@@ -792,16 +779,6 @@ h2 {
     }
 }
 
-.sidebar-filtros-iconos .filtro-btn.activo {
-  color: #e63946;
-  transform: scale(1.1);
-}
-
-.sidebar-filtros-iconos .filtro-btn.activo i {
-  color: #e63946;
-}
-
-
 
 /* ========================================
    FOOTER PRINCIPAL
@@ -812,7 +789,7 @@ h2 {
     background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
     color: var(--color-blanco);
     padding: 4rem 0 0;
-    margin-top: 20px; /* Se empuja al fondo */
+    margin-top: auto; /* Se empuja al fondo */
     position: relative;
     overflow: hidden;
     flex-shrink: 0; /* No se encoge */
@@ -863,7 +840,7 @@ h2 {
 
 .footer-columna {
     /* Animación de entrada */
-   
+    opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease;
 }
@@ -1416,11 +1393,3 @@ a {
     a:hover {
         color: #555;
     }
-.footer-profesional::after {
-  z-index: 0;
-}
-
-.footer-container {
-  position: relative;
-  z-index: 1;
-}
