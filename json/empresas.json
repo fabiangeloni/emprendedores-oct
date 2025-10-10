@@ -1,0 +1,41 @@
+[{
+  "nombre": "Evaluna Papelería Creativa",
+  "direccion": "",
+  "telefono": "2473446378",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/EVALUNA-PAPELERIA/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/EVALUNA-PAPELERIA/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/EVALUNA-PAPELERIA/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/EVALUNA-PAPELERIA/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/EVALUNA-PAPELERIA/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/EVALUNA-PAPELERIA/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/evaluna_papeleria_creativa",
+  "descripcionCorta": "Papelería creativa 🎨 Tarjetas, fotos y regalos personalizados. Diseño único para cada cliente.",
+  "descripcionLarga": "Evaluna Papelería Creativa nos ofrece un mundo de detalles únicos y llenos de personalidad. Diseñamos y realizamos tarjetas personalizadas —virtuales o impresas—, tarjetas personales tipo presentación, y etiquetas y tags pensados especialmente para emprendedores que quieren destacar su marca.\nTambién brindamos servicio de fotocopias en color y blanco y negro, impresión de fotografías en medidas 10x15 y 13x18, y creamos regalos personalizados con fotos, como almanaques, señaladores con frases o números decorativos en papel fotográfico A4 (230 gr).\nCada pedido se entrega pactado con el cliente o a domicilio, y aceptamos todos los medios de pago.\n✨ Evaluna Papelería Creativa: donde cada papel cuenta una historia.\n\n",
+  "categoria": "Comerciantes",
+  "haceEnvios": true,
+  "urgencias": false
+},
+{
+  "nombre": "FP Construcciones",
+  "direccion": "",
+  "telefono": "2473533602",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/FP-CONSTRUCCIONES/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/FP-CONSTRUCCIONES/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/FP-CONSTRUCCIONES/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/FP-CONSTRUCCIONES/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/FP-CONSTRUCCIONES/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/FP-CONSTRUCCIONES/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "",
+  "descripcionCorta": "Remodelaciones, albañilería y electricidad ⚒️ Calidad y confianza con experiencia comprobada.",
+  "descripcionLarga": "Federico Paniagua ofrece servicios integrales de remodelaciones y albañilería en general, con más de 3 años de experiencia trabajando por cuenta propia y una sólida trayectoria en el rubro.\nRealiza reformas, reparaciones y mantenimiento de viviendas o locales, incluyendo colocación de PVC, instalaciones eléctricas, terminaciones y mejoras en interiores y exteriores.\nCada trabajo se realiza con compromiso, responsabilidad y atención al detalle, buscando siempre la satisfacción del cliente y resultados duraderos.\nFederico acompaña cada proyecto desde la planificación hasta la entrega final, brindando soluciones prácticas y a medida.\n✨ Confianza, experiencia y calidad en cada obra.",
+  "categoria": "Servicios",
+  "haceEnvios": false,
+  "urgencias": false
+}]
+
