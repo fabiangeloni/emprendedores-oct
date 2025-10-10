@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Claudia Álvarez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estiloo/estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Sección de perfil con logo y datos -->
+    <section class="perfil">
+        <div class="logo">
+            <img src="img/Logo Panadería Rústico.jpg" alt="Logo Claudia Álvarez" />
+        </div>
+
+        <div class="info">
+            <div class="nombre-emprendimiento">
+                <h2>Panadería Rústico</h2>
+            </div>
+
+            <div class="iconos-contacto">
+                <a href="tel:2473475255" target="_blank"><i class="fas fa-phone"></i></a>
+                <a href="https://www.google.com/maps?q=Panadería+Rústico+Colón+Buenos+Aires" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                <a href="https://www.instagram.com/claudia.alvarez" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/claudia.alvarez.diseno" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+            <div class="boton-wsp">
+                <a href="https://wa.me/542473475255" target="_blank">Contacto directo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de descripción -->
+    <section class="descripcion">
+        <p class="breve">Panadería artesanal con esencia local y sabor auténtico.</p>
+        <p class="larga">
+        Nos dedicamos a crear productos horneados con ingredientes seleccionados, técnicas tradicionales y un toque moderno. Cada pieza refleja nuestra pasión por el detalle, la calidad y el amor por lo hecho en casa.
+        </p>
+    </section>
+
+
+    <!-- Carrusel de imágenes -->
+    <section class="carrusel">
+        <div class="carrusel-track" id="carruselTrack">
+            
+            
+        </div>
+    </section>
+<script>
+  // --- Ruta del JSON externo ---
+  const urlJSON = 'json/empresas.json';
+
+  // --- Función para inicializar la página ---
+  async function inicializar() {
+    try {
+      const response = await fetch(urlJSON);
+      if (!response.ok) throw new Error("No se pudo cargar el JSON");
+      const empresas = await response.json();
+
+      // --- Seleccionamos la empresa que querés mostrar (por ejemplo la primera) ---
+      const empresa = empresas[0]; // o cambiar a cualquier índice
+
+      // --- Fondo dinámico de la sección PERFIL ---
+      const seccionPerfil = document.querySelector('.perfil');
+      if (empresa.fotos && empresa.fotos.length > 0) {
+        seccionPerfil.style.backgroundImage = `url('${empresa.fotos[0]}')`;
+      }
+
+      // --- Foto y nombre ---
+      document.querySelector('.logo img').src = empresa.fotoPerfil;
+      document.querySelector('.logo img').alt = empresa.nombre;
+      document.querySelector('.nombre-emprendimiento h2').textContent = empresa.nombre;
+
+      // Cambiar el título de la pestaña dinámicamente
+      document.title = empresa.nombre + " - Microemprendedores Colón";
+
+      // --- Iconos de contacto ---
+      const iconos = document.querySelector('.iconos-contacto');
+      iconos.innerHTML = `
+        <a href="tel:${empresa.telefono}" target="_blank"><i class="fas fa-phone"></i></a>
+        <a href="https://www.google.com/maps?q=${encodeURIComponent(empresa.empresa + ' ' + empresa.direccion)}" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+        <a href="${empresa.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="${empresa.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      `;
+
+      // --- Botón de WhatsApp ---
+      document.querySelector('.boton-wsp a').href = `https://wa.me/54${empresa.telefono}`;
+
+      // --- Descripciones ---
+      document.querySelector('.descripcion .breve').textContent = empresa.descripcionCorta;
+      document.querySelector('.descripcion .larga').textContent = empresa.descripcionLarga;
+
+      // --- Carrusel con bucle infinito ---
+      const carrusel = document.getElementById('carruselTrack');
+      const repeticiones = 4; // cantidad de veces que se repite el set de fotos
+
+      let contenidoCarrusel = "";
+      for (let i = 0; i < repeticiones; i++) {
+        contenidoCarrusel += empresa.fotos
+          .map(foto => `<div class="carrusel-slide"><img src="${foto}" alt="${empresa.nombre}" /></div>`)
+          .join('');
+      }
+
+      carrusel.innerHTML = contenidoCarrusel;
+
+    } catch (error) {
+      console.error("Error al cargar empresas:", error);
+    }
+  }
+
+  // --- Ejecutar la inicialización ---
+  inicializar();
+</script>
+
+
+   
+
+</body>
+</html>
+
