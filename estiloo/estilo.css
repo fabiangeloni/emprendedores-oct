@@ -328,3 +328,23 @@ body {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+.carrusel {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carrusel-track {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* mejora scroll suave en iOS */
+}
+
+.carrusel-track::-webkit-scrollbar {
+  display: none; /* oculta scrollbar en móviles */
+}
+
+

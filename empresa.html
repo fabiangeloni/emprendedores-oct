@@ -123,6 +123,46 @@
   // Esperar a que el DOM esté listo
   document.addEventListener('DOMContentLoaded', inicializar);
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("carruselTrack");
+  let startX = 0;
+  let scrollLeft = 0;
+  let isDown = false;
+
+  // === Soporte con el mouse (para escritorio) ===
+  track.addEventListener("mousedown", (e) => {
+    isDown = true;
+    startX = e.pageX - track.offsetLeft;
+    scrollLeft = track.scrollLeft;
+  });
+  track.addEventListener("mouseleave", () => (isDown = false));
+  track.addEventListener("mouseup", () => (isDown = false));
+  track.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - track.offsetLeft;
+    const walk = (x - startX) * 1.5; // sensibilidad
+    track.scrollLeft = scrollLeft - walk;
+  });
+
+  // === Soporte táctil (para móviles) ===
+  track.addEventListener("touchstart", (e) => {
+    isDown = true;
+    startX = e.touches[0].pageX - track.offsetLeft;
+    scrollLeft = track.scrollLeft;
+  });
+
+  track.addEventListener("touchend", () => (isDown = false));
+  track.addEventListener("touchmove", (e) => {
+    if (!isDown) return;
+    const x = e.touches[0].pageX - track.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    track.scrollLeft = scrollLeft - walk;
+  });
+});
+</script>
   
 
 </body>
