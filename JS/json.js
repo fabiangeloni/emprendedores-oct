@@ -9,10 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let empresas = [];
   let filtroCategoria = "todas";
 
- function mostrarTarjetas(empresasFiltradas) {
+function mostrarTarjetas(empresasFiltradas) {
     contenedor.innerHTML = "";
 
-    // Actualizar título solo si existe
     if (tituloTarjetas) {
         tituloTarjetas.textContent = `Mostrando ${empresasFiltradas.length} emprendedor${empresasFiltradas.length !== 1 ? "es" : ""}`;
     }
@@ -46,7 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const boton = document.createElement("button");
         boton.textContent = "Ver Más";
-        boton.addEventListener("click", () => alert(empresa.descripcionLarga));
+        boton.addEventListener("click", () => {
+            window.location.href = `empresa.html?id=${empresa.id}`;
+        });
 
         tarjeta.appendChild(img);
         tarjeta.appendChild(tag);
@@ -56,8 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         contenedor.appendChild(tarjeta);
     });
+}
 
-  }
 
   // Función que aplica filtros por categoría y buscador
   function aplicarFiltros() {
