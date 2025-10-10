@@ -1,5 +1,6 @@
 [
     {
+        "id": "evaluna",
   "nombre": "Evaluna Papelería Creativa",
   "direccion": "",
   "telefono": "2473446378",
@@ -20,6 +21,7 @@
   "urgencias": false
 },
 {
+    "id": "fp",
   "nombre": "FP Construcciones",
   "direccion": "",
   "telefono": "2473533602",
@@ -39,7 +41,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "gf",
   "nombre": "Viajes y Mini Fletes 24 hs",
   "direccion": "",
   "telefono": "",
@@ -59,7 +61,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "inefable",
   "nombre": "INEFABLE ",
   "direccion": "",
   "telefono": "2473473122",
@@ -79,7 +81,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "kabubi",
   "nombre": "KABUKI",
   "direccion": "",
   "telefono": "",
@@ -99,7 +101,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "horadelmate",
   "nombre": "La Hora del Mate",
   "direccion": "",
   "telefono": "",
@@ -119,7 +121,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "laca",
   "nombre": "LACA",
   "direccion": "",
   "telefono": "2473453152",
@@ -139,7 +141,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "lunaazul",
   "nombre": "LUNA AZUL",
   "direccion": "",
   "telefono": "2473475800",
@@ -159,7 +161,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "mamba",
   "nombre": "MAMBA",
   "direccion": "",
   "telefono": "2473471588",
@@ -179,7 +181,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "mr",
   "nombre": "Marina Rodríguez",
   "direccion": "",
   "telefono": "2473456269",
@@ -199,7 +201,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "mavigi",
   "nombre": "MAVIGI",
   "direccion": "",
   "telefono": "2473410648",
@@ -219,8 +221,8 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
-  "nombre": "AGUS BAGUES",
+{"id": "agusbagues",
+  "nombre": "AGUSBAGUES",
   "direccion": "",
   "telefono": "2473457076",
   "fotoPerfil": "https://microemprendedores.com.ar/img/AGUSBAGUES/FOTOS/foto-perfil.jpg",
@@ -239,7 +241,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "as",
   "nombre": "AGUSTIN SALAS",
   "direccion": "",
   "telefono": "2473475986",
@@ -259,7 +261,7 @@
   "haceEnvios": false,
   "urgencias": true
 },
-{
+{"id": "vivir-mejor",
   "nombre": "ALARMAS VIVIR MEJOR",
   "direccion": "",
   "telefono": "2473453078",
@@ -280,7 +282,7 @@
   "urgencias": true
 },
 
-{
+{"id": "arabian",
   "nombre": "ARABIAN PERFUMES",
   "direccion": "",
   "telefono": "2473445035",
@@ -300,7 +302,7 @@
   "haceEnvios": true,
   "urgencias": true
 },
-{
+{"id": "beerseba",
   "nombre": "ARTE BEERSEBA",
   "direccion": "",
   "telefono": "2473456239",
@@ -320,7 +322,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "glitterbar",
   "nombre": "BRILLO GLITTER BAR",
   "direccion": "",
   "telefono": "2473469635",
@@ -340,7 +342,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "bru",
   "nombre": "BRU CREACIONES",
   "direccion": "Calle 48 entre 14 y 15 N°673",
   "telefono": "2473406988",
@@ -360,7 +362,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "catik",
   "nombre": "CATIK-DECO",
   "direccion": "",
   "telefono": "",
@@ -380,7 +382,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "circe",
   "nombre": "Circe",
   "direccion": "",
   "telefono": "2473539475",
@@ -401,7 +403,7 @@
   "urgencias": false
 },
 
-{
+{"id": "cmari",
   "nombre": "Creaciones Mari",
   "direccion": "",
   "telefono": "2473465252",
@@ -421,7 +423,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "crearte",
   "nombre": "CREARTE DG",
   "direccion": "",
   "telefono": "2473 519155",
@@ -441,7 +443,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "carrito",
   "nombre": "El Carrito de la Plaza",
   "direccion": "",
   "telefono": "2473454410 / 2473503405",
@@ -461,7 +463,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "empanadas",
   "nombre": "Débora Empanadas",
   "direccion": "",
   "telefono": "1159132828",
@@ -481,7 +483,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "mikaindumentaria",
   "nombre": "MIKA INDUMENTARIA",
   "direccion": "",
   "telefono": "3412177496",
@@ -506,7 +508,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "yor",
   "nombre": "Sabores De Yor",
   "direccion": "",
   "telefono": "2473446156",
@@ -526,7 +528,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "mikamakeup",
   "nombre": "Mika Make Up",
   "direccion": "",
   "telefono": "+3412177496",
@@ -551,7 +553,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "sakura",
   "nombre": "SAKURA FRAGANCE ",
   "direccion": "",
   "telefono": "2473447872",
@@ -571,7 +573,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "sunshine",
   "nombre": "SUNSHINE BY MAR",
   "direccion": "",
   "telefono": "2473457203",
@@ -591,7 +593,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "lunaaccesorios",
   "nombre": "Luna Azul Accesorios",
   "direccion": "",
   "telefono": "2473475800",
@@ -611,7 +613,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "msconstrucciones",
   "nombre": "Maxi Sanchez Construcciones",
   "direccion": "",
   "telefono": "2473518115",
@@ -631,7 +633,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "decovinil",
   "nombre": "DecoVinil",
   "direccion": "",
   "telefono": "2473518115",
@@ -651,7 +653,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "slmarketing",
   "nombre": "SL Marketing",
   "direccion": "",
   "telefono": "2473407680",
@@ -671,7 +673,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "tpc",
   "nombre": "Taller Protegido Colón",
   "direccion": "",
   "telefono": "2473456760",
@@ -691,7 +693,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "tecnopisos",
   "nombre": "Tecnopisos",
   "direccion": "",
   "telefono": "2473409044",
@@ -711,7 +713,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "zanito",
   "nombre": "Zanito",
   "direccion": "38 e/ 23 y 24",
   "telefono": "2473460113",
@@ -731,7 +733,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "chapas",
   "nombre": "A las chapas",
   "direccion": "",
   "telefono": "2473410185",
@@ -751,7 +753,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "arrozconleche",
   "nombre": "Arroz con leche",
   "direccion": "",
   "telefono": "2473464977",
@@ -771,7 +773,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "carrusel",
   "nombre": "Carrusel Indumentaria",
   "direccion": "11 entre 46 y 47",
   "telefono": "2473448828",
@@ -791,7 +793,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "colifato",
   "nombre": "Correcto Colifato",
   "direccion": "",
   "telefono": "2473469799",
@@ -811,7 +813,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "josefina",
   "nombre": "Dulce Josefina",
   "direccion": "",
   "telefono": "2473507143",
@@ -831,7 +833,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "meangreen",
   "nombre": "Mean Green",
   "direccion": "",
   "telefono": "2473446427",
@@ -851,7 +853,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "gonchi",
   "nombre": "HIstorias Cantadas",
   "direccion": "",
   "telefono": "2364543024",
@@ -871,7 +873,7 @@
   "haceEnvios": false,
   "urgencias": false
 },
-{
+{"id": "loly",
   "nombre": "Dulce Loly",
   "direccion": "",
   "telefono": "247350336",
@@ -889,7 +891,7 @@
   "haceEnvios": true,
   "urgencias": false
 },
-{
+{"id": "marla",
   "nombre": "Marla Aromas",
   "direccion": "Calle 52 e 22 y 23",
   "telefono": "2473449660",
