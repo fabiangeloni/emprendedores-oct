@@ -9,6 +9,17 @@ body {
   color: #333;
 }
 
+.logo-microemprendedor {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+.logo-microemprendedor img {
+  width: 30px;
+  height: auto;
+
+}
 /* PERFIL */
 .perfil {
   display: flex;
@@ -357,5 +368,6 @@ body {
 .carrusel-track::-webkit-scrollbar {
   display: none; /* oculta scrollbar en móviles */
 }
+
 
 
