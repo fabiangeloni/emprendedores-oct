@@ -21,7 +21,7 @@ function inicializar() {
 
   // Limpia contenedor antes de renderizar (por si se vuelve a ejecutar)
   contenedor.innerHTML = "";
-
+console.log(empresas);
   // --- RENDER DE TARJETAS ---
   empresas.forEach(empresa => {
     const card = document.createElement("div");
