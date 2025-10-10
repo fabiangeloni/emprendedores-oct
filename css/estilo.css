@@ -669,9 +669,9 @@ a:hover{
     text-align: center;
 }
 
-.sidebar-filtros-iconos li {
-    /* margin-bottom: 10px; */
-}
+/* .sidebar-filtros-iconos li {
+    margin-bottom: 10px;
+} */
 
 .sidebar-filtros-iconos a {
     display: block;
@@ -731,13 +731,13 @@ h2 {
     width: 100%;
     max-width: 280px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     position: relative;
     flex: 1 1 250px;
 }
 
 .tarjeta:hover {
-    transform: translateY(-2px);
+    transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
@@ -788,6 +788,21 @@ h2 {
     .tarjetas-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+
+    .sidebar-filtros-iconos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background: black;
+    width: 100vw;
+    justify-content: space-evenly;
+}
 }
 
 
