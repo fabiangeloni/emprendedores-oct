@@ -649,7 +649,7 @@ a:hover{
 
 .sidebar-filtros-iconos {
     position: sticky;
-    top: 100px;
+    top: 140px;
     left: 0;
     width: auto;
     background-color: #222;
@@ -657,7 +657,8 @@ a:hover{
     height: 430px;
     border-radius: 0 5px 5px 0;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    padding-top: 4px;
 }
 
 /* Estilos de la lista y los íconos */
@@ -669,12 +670,12 @@ a:hover{
 }
 
 .sidebar-filtros-iconos li {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .sidebar-filtros-iconos a {
     display: block;
-    padding: 10px;
+    padding: 8px;
     color: #fff;
     font-size: 24px;
     text-decoration: none;
@@ -685,7 +686,7 @@ a:hover{
     display: block;
     /* padding: 0px 3px; */
     color: #fff;
-    font-size: 11px;
+    font-size: 10px;
     text-align: center;
     margin: 0px auto;
 }
