@@ -730,6 +730,46 @@
   "categoria": "Gastronomico",
   "haceEnvios": true,
   "urgencias": false
+},
+{
+  "nombre": "A las chapas",
+  "direccion": "",
+  "telefono": "2473410185",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/A-LAS-CHAPAS/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/A-LAS-CHAPAS/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/A-LAS-CHAPAS/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/A-LAS-CHAPAS/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/A-LAS-CHAPAS/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/A-LAS-CHAPAS/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/a_laschapas_/",
+  "descripcionCorta": "Chapas decorativas artesanales, vintage y sublimadas, perfectas para tu hogar o regalo original.",
+  "descripcionLarga": "Leonardo Horacio Jaime nos ofrece chapas decorativas artesanales que combinan estilo vintage con técnicas modernas de sublimación. Cada pieza es única, pensada para darle a tu hogar, oficina o espacio creativo un toque especial y lleno de personalidad. Participa activamente en ferias, donde comparte su pasión por el diseño artesanal y la estética que respeta las raíces del trabajo hecho a mano. Sus chapas son ideales para decoración de interiores, regalos originales y proyectos creativos. Con materiales de calidad y atención al detalle, Leonardo transforma simples chapas en verdaderas obras de arte que cuentan historias y evocan emociones.",
+  "categoria": "Artesanias",
+  "haceEnvios": true,
+  "urgencias": false
+},
+{
+  "nombre": "Arroz con leche",
+  "direccion": "",
+  "telefono": "2473464977",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/ARROZ-CON-LECHE/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/ARROZ-CON-LECHE/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/ARROZ-CON-LECHE/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/ARROZ-CON-LECHE/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/ARROZ-CON-LECHE/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/ARROZ-CON-LECHE/FOTOS/5.jpg"
+  ],
+  "facebook": "https://www.facebook.com/arroz.con.leche.494859",
+  "instagram": "https://www.instagram.com/arrozconleche_41/",
+  "descripcionCorta": "Juegos y juguetes de madera hechos a mano, creativos y personalizados para toda la familia.",
+  "descripcionLarga": "Arroz con leche nos ofrece juegos y juguetes de madera hechos a mano con amor y dedicación familiar. Desde animales de la selva, pistas de carreras, juegos de granja, hasta rompecabezas y bloques para construir, cada pieza es cuidadosamente cortada, lijada, pintada y barnizada en casa, garantizando seguridad y diversión para niños de todas las edades. Además, siempre que está a su alcance, realizan trabajos personalizados bajo pedido, adaptando colores, diseños y tamaños según tus necesidades. Sus juguetes no solo entretienen, sino que fomentan la creatividad, la motricidad fina y el juego en familia. Síguelos en Instagram @arrozconleche_41 y descubri el mundo mágico de sus creaciones.",
+  "categoria": "Artesanias",
+  "haceEnvios": true,
+  "urgencias": false
 }
 
 
