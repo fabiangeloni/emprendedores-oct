@@ -1,14 +1,21 @@
+let empresas = [];
 
+fetch("./json/empresas.json")
+  .then(response => {
+    if (!response.ok) throw new Error("No se pudo cargar el archivo JSON");
+    return response.json();
+  })
+  .then(data => {
+    empresas = data;
+    inicializar(); // función que renderiza todo
+  })
+  .catch(error => console.error("Error al cargar empresas:", error));
 
-
-
-fetch('json/empresas.json')
-  .then(response => response.json())
-  .then(empresas => {
-
+// === FUNCIÓN PRINCIPAL ===
+function inicializar() {
 // === ELEMENTOS BASE ===
 const contenedor = document.getElementById("tarjetas-container");
-const titulo = document.getElementById("titulo-tarjetas");});
+const titulo = document.getElementById("titulo-tarjetas");
 
 // === RENDER DE TARJETAS ===
 empresas.forEach(empresa => {
@@ -25,7 +32,7 @@ empresas.forEach(empresa => {
   `;
   contenedor.appendChild(card);
 });
-  
+
 // === FUNCIONES ===
 function mostrarTodas() {
   contenedor.querySelectorAll(".card").forEach(card => card.style.display = "block");
@@ -142,6 +149,6 @@ titulo.textContent = "Todos los emprendedores";
 
 
 
-
+}
 
 
