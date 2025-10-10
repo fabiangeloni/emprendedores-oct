@@ -9,40 +9,49 @@ document.addEventListener("DOMContentLoaded", () => {
   let filtroCategoria = "todas";
 
   function mostrarTarjetas(empresasFiltradas) {
-    contenedor.innerHTML = "";
-    empresasFiltradas.forEach(empresa => {
-      const tarjeta = document.createElement("div");
-      tarjeta.classList.add("tarjeta");
-      tarjeta.dataset.categoria = empresa.categoria.toLowerCase();
+  contenedor.innerHTML = "";
 
-      const img = document.createElement("img");
-      img.src = empresa.fotoPerfil;
-      img.alt = empresa.nombre;
-
-      const tag = document.createElement("span");
-      tag.classList.add("categoria-tag");
-      tag.textContent = empresa.categoria;
-
-      const titulo = document.createElement("h2");
-      titulo.classList.add("titulo");
-      titulo.textContent = empresa.nombre;
-
-      const desc = document.createElement("p");
-      desc.textContent = empresa.descripcionCorta;
-
-      const boton = document.createElement("button");
-      boton.textContent = "Ver Más";
-      boton.addEventListener("click", () => alert(empresa.descripcionLarga));
-
-      tarjeta.appendChild(img);
-      tarjeta.appendChild(tag);
-      tarjeta.appendChild(titulo);
-      tarjeta.appendChild(desc);
-      tarjeta.appendChild(boton);
-
-      contenedor.appendChild(tarjeta);
-    });
+  // Mezclar aleatoriamente
+  const mezcladas = [...empresasFiltradas];
+  for (let i = mezcladas.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [mezcladas[i], mezcladas[j]] = [mezcladas[j], mezcladas[i]];
   }
+
+  // Mostrar las tarjetas
+  mezcladas.forEach(empresa => {
+    const tarjeta = document.createElement("div");
+    tarjeta.classList.add("tarjeta");
+    tarjeta.dataset.categoria = empresa.categoria.toLowerCase();
+
+    const img = document.createElement("img");
+    img.src = empresa.fotoPerfil;
+    img.alt = empresa.nombre;
+
+    const tag = document.createElement("span");
+    tag.classList.add("categoria-tag");
+    tag.textContent = empresa.categoria;
+
+    const titulo = document.createElement("h2");
+    titulo.classList.add("titulo");
+    titulo.textContent = empresa.nombre;
+
+    const desc = document.createElement("p");
+    desc.textContent = empresa.descripcionCorta;
+
+    const boton = document.createElement("button");
+    boton.textContent = "Ver Más";
+    boton.addEventListener("click", () => alert(empresa.descripcionLarga));
+
+    tarjeta.appendChild(img);
+    tarjeta.appendChild(tag);
+    tarjeta.appendChild(titulo);
+    tarjeta.appendChild(desc);
+    tarjeta.appendChild(boton);
+
+    contenedor.appendChild(tarjeta);
+  });
+}
 
   function aplicarFiltros() {
     const texto = buscador.value.toLowerCase();
