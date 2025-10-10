@@ -610,6 +610,66 @@
   "categoria": "Artesanias",
   "haceEnvios": true,
   "urgencias": false
+},
+{
+  "nombre": "Maxi Sanchez Construcciones",
+  "direccion": "",
+  "telefono": "2473518115",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/MAXISANCHEZ-1/FOTOS/7.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/MAXISANCHEZ-1/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/MAXISANCHEZ-1/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/MAXISANCHEZ-1/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/MAXISANCHEZ-1/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/MAXISANCHEZ-1/FOTOS/5.jpg"
+  ],
+  "facebook": "https://www.facebook.com/search/top?q=maximiliano%20sanchez",
+  "instagram": "https://www.instagram.com/maxi.sanchez84/",
+  "descripcionCorta": "Albañilería profesional, calidad garantizada y experiencia que se nota en cada obra.",
+  "descripcionLarga": "Trabajos de Albañilería Garantizados nos ofrece la tranquilidad de saber que cada proyecto se realiza con dedicación, experiencia y pasión por el oficio. Con muchos años en el rubro de la construcción y la albañilería profesional, brindamos soluciones de calidad superior en cada detalle: desde pequeñas reformas hasta obras completas. Nuestra prioridad es la satisfacción del cliente, por eso garantizamos resultados duraderos, prolijos y seguros. Amamos lo que hacemos, y eso se nota en cada pared levantada, en cada terminación impecable y en cada cliente que vuelve a confiar. Porque sabemos que la calidad no se improvisa: se construye con compromiso, precisión y responsabilidad.\nTrabajamos con seguro de vida para tu tranquilidad.\n",
+  "categoria": "Servicios",
+  "haceEnvios": false,
+  "urgencias": false
+},
+{
+  "nombre": "DecoVinil",
+  "direccion": "",
+  "telefono": "2473518115",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/MAXISANCHEZ-2/FOTOS/8.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/MAXISANCHEZ-2/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/MAXISANCHEZ-2/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/MAXISANCHEZ-2/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/MAXISANCHEZ-2/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/MAXISANCHEZ-2/FOTOS/5.jpg"
+  ],
+  "facebook": "https://www.facebook.com/maximiliano.sanchez.1232/",
+  "instagram": "https://www.instagram.com/maxi.sanchez84/",
+  "descripcionCorta": "Placas y pisos vinílicos autoadhesivos de calidad, resistencia y diseño para tus espacios.",
+  "descripcionLarga": "ecoVinil nos ofrece soluciones prácticas y modernas para renovar tus espacios sin complicaciones. Especializados en placas autoadhesivas y pisos vinílicos de alta resistencia, contamos con una amplia variedad de medidas y colores: placas de 60x30, 120x60 y rollos de 122x3; pisos autoadhesivos de 60x5; y vinilos en todos los tonos, disponibles en 60x5 o 60x10. También trabajamos con pisos de 2 cm de espesor, 2 m de ancho y el largo que necesites. Cada producto combina calidad, durabilidad y diseño, pensados para adaptarse a todo tipo de ambientes: hogares, locales comerciales y oficinas. Con DecoVinil, transformar tus espacios es simple, rápido y estéticamente impecable. Apostamos por la innovación, la practicidad y el estilo para que cada rincón refleje tu personalidad.\n",
+  "categoria": "Servicios",
+  "haceEnvios": false,
+  "urgencias": false
+},
+{
+  "nombre": "SL Marketing",
+  "direccion": "",
+  "telefono": "2473407680",
+  "fotoPerfil": "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/1.jpg",
+    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/2.jpg",
+    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/3.jpg",
+    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/4.jpg",
+    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/5.jpg"
+  ],
+  "facebook": "https://www.facebook.com/silvana.lallana/",
+  "instagram": "https://www.instagram.com/slmarketing.redes/",
+  "descripcionCorta": "Community Manager con enfoque estratégico, IA y mentorías para marcas personales y PYMES.",
+  "descripcionLarga": "Silvana Lallana es Community Manager con formación en Administración de PYMES y más de cinco años de experiencia en la gestión de redes sociales como Instagram, Facebook y LinkedIn, ayudando a emprendedores y pequeñas empresas a construir una presencia digital sólida y coherente.\nSu enfoque combina estrategia, creatividad y tecnología, desarrollando contenido orgánico, diseño gráfico estratégico y una gestión alineada a los objetivos de cada marca.\nSilvana integra herramientas de Inteligencia Artificial —como ChatGPT, Canva IA y asistentes de redacción— para optimizar tiempos, mejorar resultados y crear contenido que realmente conecte con la audiencia.\nAdemás, ofrece mentorías personalizadas en LinkedIn para potenciar marcas personales, mejorar oportunidades laborales y acompañar a quienes buscan destacarse en el mundo digital.\n✨ Estrategia, creatividad y conexión humana en cada publicación.\n",
+  "categoria": "Servicios",
+  "haceEnvios": false,
+  "urgencias": false
 }
 
 
