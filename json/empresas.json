@@ -830,7 +830,86 @@
   "categoria": "Gastronomia",
   "haceEnvios": true,
   "urgencias": false
+},
+{
+  "nombre": "Mean Green",
+  "direccion": "",
+  "telefono": "2473446427",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/MEAN-GREEN/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/MEAN-GREEN/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/MEAN-GREEN/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/MEAN-GREEN/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/MEAN-GREEN/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/MEAN-GREEN/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "",
+  "descripcionCorta": "Servicios de jardinería, limpieza y mantenimiento: corte, poda, lavado y pintura profesional.",
+  "descripcionLarga": "Héctor Daniel Aresta nos ofrece servicios completos de jardinería, limpieza y mantenimiento de espacios exteriores. Desde corte de pasto, limpieza de terrenos y poda de plantas, hasta lavado con hidrolavadora y trabajos de pintura, cada tarea se realiza con profesionalismo y dedicación. Su enfoque combina eficiencia, cuidado del detalle y respeto por el entorno, garantizando que cada espacio luzca limpio, ordenado y renovado. Con experiencia y compromiso, Héctor es la opción confiable para mantener jardines, patios y terrenos en perfecto estado, adaptándose a las necesidades específicas de cada cliente y brindando resultados de calidad.",
+  "categoria": "Servicios",
+  "haceEnvios": false,
+  "urgencias": false
+},
+{
+  "nombre": "HIstorias Cantadas",
+  "direccion": "",
+  "telefono": "2364543024",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/HISTORIAS-CANTADAS/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/HISTORIAS-CANTADAS/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/HISTORIAS-CANTADAS/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/HISTORIAS-CANTADAS/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/HISTORIAS-CANTADAS/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/HISTORIAS-CANTADAS/FOTOS/5.jpg"
+  ],
+  "facebook": "https://www.facebook.com/profile.php?id=100092398272278",
+  "instagram": "https://www.instagram.com/gonchi_historiascantadas/",
+  "descripcionCorta": "Cantante y profesor de música. Tributo al rock nacional con pasión y talento argentino.",
+  "descripcionLarga": "Gonzalo Chichiri nos invita a recorrer una vida dedicada por completo a la música. Nacido en Junín, Buenos Aires, comenzó su carrera artística a los 9 años, integrando bandas de rock que marcaron su estilo inconfundible. Durante su paso por Los Chicos Piratas, grabó seis discos y se presentó en reconocidos programas como “Almorzando con Mirtha Legrand” y “Sábados Tropicales”. Más tarde fundó Los Pibes de Oro, consolidando su talento como cantante y compositor. Egresado del Conservatorio Nacional, es profesor de piano, guitarra y otros instrumentos. Radicado en Colón, enseña música en escuelas primarias y secundarias, y hoy se presenta como cantante solista con un tributo al rock nacional y algún tango que siempre emociona.",
+  "categoria": "Servicios",
+  "haceEnvios": false,
+  "urgencias": false
+},
+{
+  "nombre": "Dulce Loly",
+  "direccion": "",
+  "telefono": "247350336",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/DULCE-LOLY/FOTOS/foto-perfil.jpg",
+  "fotos": ["https://microemprendedores.com.ar/img/DULCE-LOLY/FOTOS/1.jpg",
+            "https://microemprendedores.com.ar/img/DULCE-LOLY/FOTOS/2.jpg",
+            "https://microemprendedores.com.ar/img/DULCE-LOLY/FOTOS/3.jpg",
+            "https://microemprendedores.com.ar/img/DULCE-LOLY/FOTOS/4.jpg",
+            "https://microemprendedores.com.ar/img/DULCE-LOLY/FOTOS/5.jpg"],
+  "facebook": "https://www.facebook.com/ceciliaadriana.alvarez",
+  "instagram": "https://www.instagram.com/dulce.loly/",
+  "descripcionCorta": "Tortas decoradas y mesas dulces artesanales, hechas por encargue con amor y creatividad.",
+  "descripcionLarga": "Cecilia Adriana Álvarez, creadora de Dulce Loly, nos ofrece tortas decoradas artesanalmente, mesas dulces y postres personalizados para todo tipo de eventos. Cada creación es elaborada a mano con dedicación, combinando estética, sabor y detalles únicos que transforman cualquier celebración en un momento inolvidable. Desde cumpleaños y casamientos hasta desayunos sorpresa, todo se realiza por encargue, garantizando frescura y presentación impecable. Su pasión por la repostería artesanal se refleja en cada torta decorada con amor, donde la creatividad y el buen gusto son protagonistas.",
+  "categoria": "Gastronomia",
+  "haceEnvios": true,
+  "urgencias": false
+},
+{
+  "nombre": "Marla Aromas",
+  "direccion": "Calle 52 e 22 y 23",
+  "telefono": "2473449660",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/MARLA/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/MARLA/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/MARLA/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/MARLA/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/MARLA/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/MARLA/FOTOS/5.jpg"
+  ],
+  "facebook": "https://www.facebook.com/profile.php?id=100073452062037",
+  "instagram": "https://www.instagram.com/marla.aromas/",
+  "descripcionCorta": "Sahumerios, aromas y decoración sensorial. Energía positiva en cada rincón de tu hogar.",
+  "descripcionLarga": "Marla nos ofrece un espacio pensado para despertar los sentidos. En su local encontrarás sahumerios, difusores, home spray, esencias, hornitos, lámparas de sal, humidificadores, esferas de cristal y porta sahumerios hechos a mano. Cada producto está seleccionado o creado para transformar ambientes y generar armonía en el hogar. Participan en ferias locales, compartiendo su pasión por el bienestar y la energía positiva. Además, realizan envíos a domicilio para que puedas disfrutar de tus aromas favoritos donde estés. Ideal para quienes buscan equilibrio, relajación y decoración con propósito.",
+  "categoria": "Comerciante",
+  "haceEnvios": true,
+  "urgencias": false
 }
+
 
 
 
