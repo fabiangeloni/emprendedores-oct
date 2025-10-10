@@ -935,13 +935,13 @@
   "nombre": "Pizza Planet",
   "direccion": "",
   "telefono": "2473416522",
-  "fotoPerfil": "https://microemprendedores.com.ar/img/PIZZA-PLANET/foto-perfil.jpg",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/PIZZA-PLANET/FOTOS/foto-perfil.jpg",
   "fotos": [
-    "https://microemprendedores.com.ar/img/PIZZA-PLANET/1.jpg",
-    "https://microemprendedores.com.ar/img/PIZZA-PLANET/2.jpg",
-    "https://microemprendedores.com.ar/img/PIZZA-PLANET/3.jpg",
-    "https://microemprendedores.com.ar/img/PIZZA-PLANET/4.jpg",
-    "https://microemprendedores.com.ar/img/PIZZA-PLANET/5.jpg"
+    "https://microemprendedores.com.ar/img/PIZZA-PLANET/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/PIZZA-PLANET/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/PIZZA-PLANET/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/PIZZA-PLANET/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/PIZZA-PLANET/FOTOS/5.jpg"
   ],
   "facebook": "",
   "instagram": "https://www.instagram.com/pizzaplanet.colon/",
@@ -969,6 +969,26 @@
   "descripcionLarga": "María Elisa Nieto, diseñadora de indumentaria y textil, nos presenta Atelier Carmesí, un espacio donde la moda se convierte en arte. Con más de 20 años de experiencia, crea prendas únicas y a medida para bodas, fiestas, graduaciones y eventos especiales. Cada vestido nace de una charla, una inspiración y una dedicación absoluta al detalle. En su atelier de Colón, no solo confecciona el vestido ideal, sino que también asesora a cada clienta para lograr un look completo, pensado para resaltar su estilo y personalidad. Su filosofía es clara: que cada mujer se sienta espectacular, cómoda y auténtica. Descubrí más en Instagram",
   "categoria": "Indumentaria",
   "haceEnvios": false,
+  "urgencias": false
+},
+{ "id": "mundoresina",
+  "nombre": "Mundo Resina",
+  "direccion": "teniente Santi 426 Hughes santa fe",
+  "telefono": "2473447872",
+  "fotoPerfil": "ttps://microemprendedores.com.ar/img/MUNDO-RESINA/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "ttps://microemprendedores.com.ar/img/MUNDO-RESINA/FOTOS/1.jpg",
+    "ttps://microemprendedores.com.ar/img/MUNDO-RESINA/FOTOS/2.jpg",
+    "ttps://microemprendedores.com.ar/img/MUNDO-RESINA/FOTOS/3.jpg",
+    "ttps://microemprendedores.com.ar/img/MUNDO-RESINA/FOTOS/4.jpg",
+    "ttps://microemprendedores.com.ar/img/MUNDO-RESINA/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/mundo_resina10/",
+  "descripcionCorta": "Llaveros y objetos en resina epoxi hechos a mano. Diseños personalizados y entregas en Colón.",
+  "descripcionLarga": "Mundo Resina transforma la resina epoxi en arte. Desde Hughes (Santa Fe), crean llaveros, adornos y objetos personalizados con brillo, color y diseño original. Cada producto es hecho a mano con técnicas artesanales que garantizan calidad y durabilidad. Se pueden realizar pedidos por unidad o por cantidad, con una seña del 50%. Además, participan en ferias locales y realizan entregas semanales en Colón, facilitando el acceso a sus piezas únicas. Si buscás un detalle creativo para regalar o decorar, Mundo Resina combina arte, modernidad y dedicación en cada creación.",
+  "categoria": "Artesanias",
+  "haceEnvios": true,
   "urgencias": false
 }
 
