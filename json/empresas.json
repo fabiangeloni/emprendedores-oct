@@ -770,6 +770,66 @@
   "categoria": "Artesanias",
   "haceEnvios": true,
   "urgencias": false
+},
+{
+  "nombre": "Carrusel Indumentaria",
+  "direccion": "11 entre 46 y 47",
+  "telefono": "2473448828",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/CARRUSEL-INDUMENTARIA/FOTOS/fotoperfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/CARRUSEL-INDUMENTARIA/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/CARRUSEL-INDUMENTARIA/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/CARRUSEL-INDUMENTARIA/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/CARRUSEL-INDUMENTARIA/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/CARRUSEL-INDUMENTARIA/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/carrusel_colon/",
+  "descripcionCorta": "Ropa femenina en todos los talles: calzas, jeans, blusas y remeras para tu estilo diario.",
+  "descripcionLarga": "Mariana nos ofrece una tienda de ropa femenina con una amplia variedad de talles y estilos para cada ocasión. Desde calzas y jeans, hasta pantalones cortos, blusas, camisas y remeras, cada prenda está pensada para combinar comodidad, tendencia y estilo personal. Su propuesta incluye moda versátil para el día a día, eventos o salidas casuales, asegurando que cada mujer encuentre su look ideal. Con atención cercana al cliente y horarios pensados para tu conveniencia, Mariana se posiciona como una opción confiable y cercana para quienes buscan renovar su guardarropa con prendas de calidad y buen gusto.",
+  "categoria": "Indumentaria",
+  "haceEnvios": true,
+  "urgencias": false
+},
+{
+  "nombre": "Correcto Colifato",
+  "direccion": "",
+  "telefono": "2473469799",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/CORRECTO-COLIFATO/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/CORRECTO-COLIFATO/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/CORRECTO-COLIFATO/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/CORRECTO-COLIFATO/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/CORRECTO-COLIFATO/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/CORRECTO-COLIFATO/FOTOS/5.jpg"
+  ],
+  "facebook": "https://www.facebook.com/profile.php?id=100057242359000",
+  "instagram": "https://www.instagram.com/correctocolifato/",
+  "descripcionCorta": "Decoración en hierro y chapa calada, diseños exclusivos y personalizados para tu hogar o jardín.",
+  "descripcionLarga": "Correcto Colifato nos presenta ago Deco, un emprendimiento especializado en decoración en hierro y chapa calada. Cada pieza es un trabajo único, pensado para transformar tu hogar, jardín o espacio especial con estilo y personalidad. Realizan diseños exclusivos y personalizados según la idea de cada cliente, combinando resistencia, arte y estética en cada detalle. Sus creaciones aportan un toque moderno y elegante, ideal para interiores y exteriores, y reflejan la creatividad y dedicación de quienes las elaboran. Contactalos y deja que tus ideas cobren vida con piezas que destacan por su diseño y funcionalidad.",
+  "categoria": "Artesanias",
+  "haceEnvios": true,
+  "urgencias": false
+},
+{
+  "nombre": "Dulce Josefina",
+  "direccion": "",
+  "telefono": "2473507143",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/DULCE-JOSEFINA/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/DULCE-JOSEFINA/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/DULCE-JOSEFINA/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/DULCE-JOSEFINA/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/DULCE-JOSEFINA/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/DULCE-JOSEFINA/FOTOS/5.jpg"
+  ],
+  "facebook": "https://www.facebook.com/dulce.josefina.56",
+  "instagram": "https://www.instagram.com/dulce_josefina15/",
+  "descripcionCorta": "Tortas, postres y mesas dulces personalizadas con delivery, para endulzar tus momentos especiales.",
+  "descripcionLarga": "Josefina nos ofrece tortas, tartas, postres y mesas dulces elaboradas con amor y tradición desde 2015. Su emprendimiento combina creatividad, sabor y presentación, ofreciendo opciones personalizadas para eventos, cumpleaños, desayunos y fines de semana con postres 4 cuartos. Además, realiza pedidos por encargo y delivery, garantizando que cada dulce llegue fresco y listo para disfrutar. También prepara saladitos para eventos, asegurando variedad y calidad en cada detalle. Cada creación de Josefina es una experiencia única que endulza momentos especiales y sorprende a quienes buscan postres con estilo, sabor y personalidad.",
+  "categoria": "Gastronomia",
+  "haceEnvios": true,
+  "urgencias": false
 }
 
 
