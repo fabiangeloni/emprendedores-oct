@@ -910,7 +910,68 @@
   "categoria": "Comerciante",
   "haceEnvios": true,
   "urgencias": false
+},
+{ "id": "nayu",
+  "nombre": "Nayu Amigurumis",
+  "direccion": "",
+  "telefono": "2473507945",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/NAYU-AMIGURUMIS/FOTOS/fotoperfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/NAYU-AMIGURUMIS/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/NAYU-AMIGURUMIS/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/NAYU-AMIGURUMIS/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/NAYU-AMIGURUMIS/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/NAYU-AMIGURUMIS/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/nayu.amigurumis/",
+  "descripcionCorta": "Nayu Amigurumis tejidos a crochet, personalizados y llenos de ternura. Hechos a mano con amor.",
+  "descripcionLarga": "Nayu Amigurumis nació en 2022 como un emprendimiento artesanal que combina ternura, diseño y tradición. Se dedican a crear amigurumis tejidos a crochet, muñecos hechos completamente a mano que transmiten amor y creatividad en cada puntada. Cada personaje es único, ideal para regalar, decorar o acompañar momentos especiales. Nayu ofrece pedidos personalizados, adaptando colores y estilos a gusto del cliente, y participa activamente en ferias municipales. En su showroom de Instagram @nayu.amigurumis\n, se puede ver su colección llena de vida, donde cada hilo cuenta una historia y cada muñeco tiene alma propia.",
+  "categoria": "Artesanias",
+  "haceEnvios": true,
+  "urgencias": false
+},
+{ "id": "pizzaplanet",
+  "nombre": "Pizza Planet",
+  "direccion": "",
+  "telefono": "2473416522",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/PIZZA-PLANET/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/PIZZA-PLANET/1.jpg",
+    "https://microemprendedores.com.ar/img/PIZZA-PLANET/2.jpg",
+    "https://microemprendedores.com.ar/img/PIZZA-PLANET/3.jpg",
+    "https://microemprendedores.com.ar/img/PIZZA-PLANET/4.jpg",
+    "https://microemprendedores.com.ar/img/PIZZA-PLANET/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/pizzaplanet.colon/",
+  "descripcionCorta": "Pizzas y empanadas caseras con delivery. Sabor, calidad y atención de Pizza Planet.",
+  "descripcionLarga": "Pizza Planet es un emprendimiento familiar que desde hace casi tres años conquista los paladares de Colón con pizzas y empanadas hechas con pasión. Ambos fundadores están habilitados en manipulación de alimentos y cocinan con amor, buscando siempre hacer felices a sus clientes. Abren de jueves a lunes desde las 20:00, con servicio de delivery a toda la ciudad. Entre sus recomendadas destacan las pizzas de Pollo, Napolitana Asada y Huevo a la Plancha con Crudo. Desde la clásica muzza hasta las más especiales, cada porción es una invitación a disfrutar del sabor casero y la atención cercana que los caracteriza.",
+  "categoria": "Gastronomia",
+  "haceEnvios": true,
+  "urgencias": false
+},
+{
+  "nombre": "Atelier Carmesi",
+  "direccion": "",
+  "telefono": "2473410495",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/ATELIER-CARMESI/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/ATELIER-CARMESI/1.jpg",
+    "https://microemprendedores.com.ar/img/ATELIER-CARMESI/2.jpg",
+    "https://microemprendedores.com.ar/img/ATELIER-CARMESI/3.jpg",
+    "https://microemprendedores.com.ar/img/ATELIER-CARMESI/4.jpg",
+    "https://microemprendedores.com.ar/img/ATELIER-CARMESI/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/maria_elisa.atelier/",
+  "descripcionCorta": "Vestidos únicos a medida para bodas y eventos. Diseño, asesoramiento y estilo en Atelier Carmesí.",
+  "descripcionLarga": "María Elisa Nieto, diseñadora de indumentaria y textil, nos presenta Atelier Carmesí, un espacio donde la moda se convierte en arte. Con más de 20 años de experiencia, crea prendas únicas y a medida para bodas, fiestas, graduaciones y eventos especiales. Cada vestido nace de una charla, una inspiración y una dedicación absoluta al detalle. En su atelier de Colón, no solo confecciona el vestido ideal, sino que también asesora a cada clienta para lograr un look completo, pensado para resaltar su estilo y personalidad. Su filosofía es clara: que cada mujer se sienta espectacular, cómoda y auténtica. Descubrí más en Instagram",
+  "categoria": "Indumentaria",
+  "haceEnvios": false,
+  "urgencias": false
 }
+
 
 
 
