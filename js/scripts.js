@@ -1,5 +1,5 @@
 // === CARGA JSON EXTERNO ===
-let empresas = [];
+
 
 fetch("./json/empresas.json")
   .then(response => {
