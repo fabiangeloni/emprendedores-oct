@@ -37,5 +37,48 @@
   "categoria": "Servicios",
   "haceEnvios": false,
   "urgencias": false
-}]
+},
+{
+  "nombre": "Viajes y Mini Fletes 24 hs",
+  "direccion": "",
+  "telefono": "",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/FP-CONSTRUCCIONES/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/GASTIN-FERNANDEZ/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/GASTON-FERNANDEZ/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/GASTON-FERNANDEZ/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/GASTON-FERNANDEZ/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/GASTON-FERNANDEZ/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "",
+  "descripcionCorta": "Viajes, fletes y auxilios 🚐 Urgencias 24 horass con atención rápida y servicio confiable.",
+  "descripcionLarga": "Viajes y Mini Fletes 24 hs te ofrece un servicio confiable y rápido de traslados de media y larga distancia, mini fletes, y auxilio en ruta. Atendemos urgencias las 24 horas, todos los días del año, para que siempre tengas una solución a mano cuando más la necesitás.\nNos especializamos en viajes personales, traslados de encomiendas o muebles pequeños, y asistencia inmediata en caso de vehículos varados o emergencias.\nPriorizamos la puntualidad, seguridad y buen trato, brindando atención personalizada en cada viaje.\nYa sea un traslado urgente, un viaje planificado o un envío importante, estamos listos para ayudarte a llegar a destino sin complicaciones.\n✨ Viajes, fletes y auxilios — las 24 hs, siempre cerca tuyo.\n",
+  "categoria": "Servicios",
+  "haceEnvios": false,
+  "urgencias": false
+},
+{
+  "nombre": "INEFABLE ",
+  "direccion": "",
+  "telefono": "2473473122",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/INEFABLE/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/INEFABLE/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/INEFABLE/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/INEFABLE/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/INEFABLE/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/INEFABLE/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "",
+  "descripcionCorta": "Barras de dulces y salados para eventos, souvenirs y delivery diario en Colón y zona.",
+  "descripcionLarga": "INEFABLE Gumies nos ofrece una experiencia dulce y mágica que va más allá de lo común. Nuestro nombre refleja lo inefable: aquello que no se puede explicar con palabras, sino que hay que vivirlo. Llevamos nuestras barras de dulces y salados a tus fiestas y eventos, creando momentos únicos para disfrutar con amigos y familia, mientras nos ocupamos de todos los detalles. Además, realizamos souvenirs personalizados para tus invitados y contamos con delivery diario, llevando la magia directamente a tu hogar. Desde mayo de 2025, trabajamos en Colón y alrededores, acercando dulzura y creatividad a cada celebración. Contactanos al 2473 473122 y descubrí cómo INEFABLE Gumies puede transformar tu evento en un recuerdo inolvidable.",
+  "categoria": "Comerciantes",
+  "haceEnvios": true,
+  "urgencias": false
+}
+
+
+]
 
