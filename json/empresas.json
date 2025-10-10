@@ -670,6 +670,46 @@
   "categoria": "Servicios",
   "haceEnvios": false,
   "urgencias": false
+},
+{
+  "nombre": "Taller Protegido Colón",
+  "direccion": "",
+  "telefono": "2473456760",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/TALLER-PROTEGIDO/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/TALLER-PROTEGIDO/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/TALLER-PROTEGIDO/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/TALLER-PROTEGIDO/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/TALLER-PROTEGIDO/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/TALLER-PROTEGIDO/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/protegidotaller/",
+  "descripcionCorta": "Productos de limpieza hechos con inclusión 💙 Calidad, compromiso y delivery en Taller Protegido Colón.",
+  "descripcionLarga": "Taller Protegido Colón es un espacio de trabajo inclusivo y solidario dedicado a la venta de productos y accesorios para limpieza, elaborados con compromiso y dedicación por adultos con discapacidad.\nOfrecen una amplia variedad de artículos: bolsas de residuos (familiares y de consorcio), escobillones, rejillas y trapos de piso, todos confeccionados con calidad y cuidado en cada detalle.\nPodés visitar su salón de ventas en calle 11 entre 50 y 51 (Colón), de lunes a viernes de 8 a 13 hs, o aprovechar su servicio de delivery activo los martes y jueves por la mañana.\nCon cada compra, colaborás con la inclusión laboral y el desarrollo personal de quienes forman parte del taller. ✨ Productos con propósito. Calidad, trabajo y compromiso social.\n\n",
+  "categoria": "Comerciante",
+  "haceEnvios": false,
+  "urgencias": false
+},
+{
+  "nombre": "Tecnopisos",
+  "direccion": "",
+  "telefono": "2473409044",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/tecnopisoscolon/",
+  "descripcionCorta": "Pisos spc y flotantes, revestimientos y cielorrasos con estilo. Amoblamiento e iluminación.\n",
+  "descripcionLarga": "Tecnopisos Colón ofrece soluciones integrales para renovar y modernizar tus espacios, combinando diseño, calidad y funcionalidad.\nNos especializamos en la venta y colocación de pisos flotantes, vinílicos y revestimientos, brindando asesoramiento personalizado para hogares, oficinas y locales comerciales.\nAdemás, trabajamos con cielorrasos de PVC, una opción práctica, duradera y estética para transformar cualquier ambiente.\nComplementamos nuestros servicios con una línea completa de amoblamiento e iluminación comercial y residencial, pensada para crear espacios armónicos, modernos y confortables.",
+  "categoria": "Servicios",
+  "haceEnvios": false,
+  "urgencias": false
 }
 
 
