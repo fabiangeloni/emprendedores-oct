@@ -1,14 +1,11 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-
-    // Cargar datos desde el archivo JSON
-  
 
   const contenedor = document.getElementById("tarjetas-container");
   const buscador = document.getElementById("buscador");
   const form = document.getElementById("form-buscador");
   const botones = document.querySelectorAll(".filtro-btn");
 
+  let empresas = [];
   let filtroCategoria = "todas";
 
   function mostrarTarjetas(empresasFiltradas) {
@@ -68,16 +65,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // Escucha del buscador
   buscador.addEventListener("input", aplicarFiltros);
 
-  // Escucha de botones de categoría
-  botones.forEach(btn => {
-    btn.addEventListener("click", e => {
-      e.preventDefault();
-      filtroCategoria = btn.dataset.categoria.toLowerCase();
-      aplicarFiltros();
-    });
-  });
+  // Cargar JSON externo
+  fetch("json/empresas.json")
+    .then(response => response.json())
+    .then(data => {
+      empresas = data;
 
-  // Mostrar todas al inicio
-  mostrarTarjetas(empresas);
+      // Mostrar todas las tarjetas al inicio
+      mostrarTarjetas(empresas);
+
+      // Escucha de botones de categoría (ahora dentro de .then para tener 'empresas')
+      botones.forEach(btn => {
+        btn.addEventListener("click", e => {
+          e.preventDefault();
+          filtroCategoria = btn.dataset.categoria.toLowerCase();
+          aplicarFiltros();
+        });
+      });
+    })
+    .catch(error => console.error("Error al cargar el JSON:", error));
+
 });
-
