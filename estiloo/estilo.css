@@ -144,7 +144,18 @@ body {
 
 .carrusel-track {
   display: flex;
-  animation: scroll 40s linear infinite;
+ scroll-snap-type: x mandatory;   /* Enlaza los slides */
+  -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en iOS */
+  scroll-behavior: smooth;          /* Movimiento fluido */
+}
+
+.carrusel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carrusel-slide {
+  flex: 0 0 auto;
+  scroll-snap-align: start;         /* Hace que se “enganche” bien */
 }
 
 .carrusel:hover .carrusel-track {
