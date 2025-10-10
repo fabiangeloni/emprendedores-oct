@@ -990,6 +990,26 @@
   "categoria": "Artesanias",
   "haceEnvios": true,
   "urgencias": false
+},
+{ "id": "laestrella",
+  "nombre": "La Estrella",
+  "direccion": "51 N362 - Colon",
+  "telefono": "2473467675",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/LA-ESTRELLA/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/LA-ESTRELLA/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/LA-ESTRELLA/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/LA-ESTRELLA/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/LA-ESTRELLA/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/LA-ESTRELLA/FOTOS/5.jpg"
+  ],
+  "facebook": "https://www.facebook.com/laestrellacolon",
+  "instagram": "https://www.instagram.com/laestrella.colon/",
+  "descripcionCorta": "Artículos de limpieza, aromatizantes y decoración para el hogar. Todo lo que tu casa necesita.",
+  "descripcionLarga": "La Estrella nos ofrece una experiencia completa para mantener tu hogar impecable y con estilo. En su tienda vas a encontrar artículos de limpieza de alta calidad, aromatizantes de marcas reconocidas como Saphirus e Iluminarte, y productos de decoración para el hogar y textiles que combinan funcionalidad con estética. Cada producto está pensado para facilitar tu día a día y aportar detalles que transforman tus espacios, desde la limpieza diaria hasta la decoración de ambientes especiales. Con atención cercana y asesoramiento personalizado, La Estrella es la opción ideal para quienes buscan cuidar su hogar con productos confiables, prácticos y de buen gusto.",
+  "categoria": "Comerciante",
+  "haceEnvios": true,
+  "urgencias": false
 }
 
 
