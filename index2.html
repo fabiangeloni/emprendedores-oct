@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Microemprendedores Colón</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="JS/scripts.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    </head>
+    <body>
+        <div class="contenedor-grid">
+            <header class="header-profesional">
+                <div class="header-wrapper">
+
+                    <!-- LOGO -->
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Microemprendedores Colón">
+                        </a>
+                    </div>
+
+                    <!-- BARRA DE BÚSQUEDA (Desktop) -->
+                    <div class="header-search-desktop">
+                       <form id="form-buscar"> <div class="search-box">
+                            <input type="text" placeholder="Buscar emprendedor o categoría..." class="search-input" id="buscador">
+                            <button type="submit" class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div></form>
+                    </div>
+
+
+
+                    <!-- NAVEGACIÓN PRINCIPAL (Desktop) -->
+                    <nav class="header-nav" id="headerNav">
+                        <ul class="nav-menu">
+                            <li>
+                                <a href="index.html" class="nav-link active">
+                                    <i class="fas fa-home"></i>
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index2.html" class="nav-link active">
+                                    <i class="fas fa-home"></i>
+                                    <span>Emprendedores</span>
+                                </a>
+                            </li>
+                            <div class="header-actions">
+                                <!-- Botón de búsqueda solo en móvil -->
+                                <button class="btn-search-mobile" id="btnSearchMobile" aria-label="Buscar">
+                                    <i class="fas fa-search"></i>
+                                </button>
+
+                                <!-- Botón CTA -->
+                                <a href="index2.html" class="btn-cta">
+                                    <span>Sumate</span>
+                                </a>
+
+                                <!-- Botón hamburguesa solo en móvil -->
+                                <button class="btn-hamburger" id="btnHamburger" aria-label="Menú">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                </div>
+
+                </ul>
+                </nav>
+
+
+
+                <!-- ACCIONES (Mobile + Desktop) -->
+                <!-- BARRA DE BÚSQUEDA MÓVIL (Expandible) -->
+                <div class="header-search-mobile" id="searchMobile">
+                    <div class="search-mobile-wrapper">
+                        <input type="text" placeholder="Buscar..." class="search-input-mobile">
+                        <button class="search-btn-mobile">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <button class="search-close-mobile" id="btnCloseMobile">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <aside class="main-layout">
+                <div class="sidebar-filtros-iconos">
+                    <ul>
+                        <li>
+                            <a href="#todas" class="filtro-btn" data-categoria="todas">
+                                <i class="fa-solid fa-store" title="Todas"></i>
+                                <p>Todos</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#gastronomia" class="filtro-btn" data-categoria="gastronomicos">
+                                <i class="fa-solid fa-utensils" title="Gastronomía"></i>
+                                <p>Gastronomía</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#comerciantes" class="filtro-btn" data-categoria="comerciantes">
+                                <i class="fa-solid fa-cart-shopping" title="Comerciantes"></i>
+                                <p>Comerciantes</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#artesanias" class="filtro-btn" data-categoria="artesanos">
+                                <i class="fa-solid fa-paintbrush" title="Artesanías"></i>
+                                <p>Artesanías</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#indumentaria" class="filtro-btn" data-categoria="indumentaria">
+                                <i class="fa-solid fa-shirt" title="Indumentaria"></i>
+                                <p>Indumentaria</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#servicios" class="filtro-btn" data-categoria="servicios">
+                                <i class="fa-solid fa-screwdriver-wrench" title="Servicios"></i>
+                                <p>Servicios</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main>
+                <section class="tarjetas-container" id="tarjetas-container">
+                   
+                   </section>
+            <footer class="footer-profesional">
+                <div class="footer-container">
+
+                    <!-- COLUMNA 1: Logo y descripción -->
+                    <div class="footer-columna footer-brand">
+                        <img src="img/logo.png" alt="Microemprendedores Colón" class="footer-logo">
+                        <p class="footer-descripcion">
+                            Conectando el talento emprendedor de Colón con nuestra comunidad.
+                            Juntos hacemos crecer la economía local.
+                        </p>
+
+                        <!-- Redes sociales -->
+                        <div class="footer-redes">
+                            <a href="https://facebook.com" target="_blank" class="red-social" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="red-social" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="red-social" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://youtube.com" target="_blank" class="red-social" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- COLUMNA 2: Enlaces rápidos -->
+                    <div class="footer-columna">
+                        <h3 class="footer-titulo">Enlaces Rápidos</h3>
+                        <ul class="footer-lista">
+                            <li>
+                                <a href="index.html">
+                                    <i class="fas fa-chevron-right"></i> Inicio
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- COLUMNA 3: Información -->
+                    <div class="footer-columna">
+                        <h3 class="footer-titulo">Información</h3>
+                        <ul class="footer-lista">
+                            <li>
+                                <a href="#sobre-nosotros">
+                                    <i class="fas fa-chevron-right"></i> Sobre Nosotros
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#como-funciona">
+                                    <i class="fas fa-chevron-right"></i> Cómo Funciona
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#preguntas">
+                                    <i class="fas fa-chevron-right"></i> Preguntas Frecuentes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#terminos">
+                                    <i class="fas fa-chevron-right"></i> Términos y Condiciones
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- COLUMNA 4: Contacto y CTA -->
+                    <div class="footer-columna footer-contacto">
+                        <h3 class="footer-titulo">Contacto</h3>
+
+                        <!-- Email de contacto -->
+                        <div class="footer-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="footer-info-texto">
+                                <span class="info-label">Email</span>
+                                <a href="mailto:info@microemprendedorescolon.com" class="info-value">
+                                    info@microemprendedorescolon.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Ubicación -->
+                        <div class="footer-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="footer-info-texto">
+                                <span class="info-label">Ubicación</span>
+                                <span class="info-value">Colón, Buenos Aires, Argentina</span>
+                            </div>
+                        </div>
+
+                        <!-- Botón de preinscripción -->
+                        <a href="formulario-preinscripcion.html" class="btn-preinscripcion">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Registra tu Emprendimiento</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LÍNEA DIVISORIA -->
+                <div class="footer-divider"></div>
+
+                <!-- COPYRIGHT -->
+                <div class="footer-bottom">
+                    <div class="footer-bottom-container">
+                        <p class="footer-copyright">
+                            © 2024 <strong>Microemprendedores Colón</strong>. Todos los derechos reservados.
+                        </p>
+                        <p class="footer-creditos">
+                            Hecho con <i class="fas fa-heart"></i> en Colón, Buenos Aires
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            <button class="btn-volver-arriba" id="btnVolverArriba" aria-label="Volver arriba">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+        <script>  // Mostrar/ocultar bot�n seg�n scroll
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 300) {
+            btnVolverArriba.classList.add('visible');
+        } else {
+            btnVolverArriba.classList.remove('visible');
+        }
+    });
+    // Acción al hacer click: volver arriba suavemente
+btnVolverArriba.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // para que haga scroll suave
+    });
+});
+</script>
+
+<script> /* === HEADER STICKY CON EFECTO SCROLL === */
+        const header = document.querySelector('.header-profesional');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+
+        // Agregar clase cuando se hace scroll
+        if (currentScroll > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        lastScroll = currentScroll;
+    });</script>
+
+
+        
+    </body>
+</html>
