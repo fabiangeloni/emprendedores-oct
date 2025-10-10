@@ -1306,6 +1306,7 @@ a.info-value {
 @media (max-width: 768px) {
     .footer-profesional {
         padding: 3rem 0 0;
+       margin-bottom: -400px;
     }
 
     .footer-container {
