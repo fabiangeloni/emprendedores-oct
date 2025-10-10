@@ -51,18 +51,25 @@
         </div>
     </section>
 <script>
-  // --- Ruta del JSON externo ---
   const urlJSON = 'json/empresas.json';
 
-  // --- Función para inicializar la página ---
   async function inicializar() {
     try {
       const response = await fetch(urlJSON);
       if (!response.ok) throw new Error("No se pudo cargar el JSON");
       const empresas = await response.json();
 
-      // --- Seleccionamos la empresa que querés mostrar (por ejemplo la primera) ---
-      const empresa = empresas[0]; // o cambiar a cualquier índice
+      // --- Obtener parámetro "id" de la URL ---
+      const params = new URLSearchParams(window.location.search);
+      const empresaId = parseInt(params.get('id')); // ejemplo: ?id=2
+
+      // --- Buscar empresa en el JSON por ID ---
+      let empresa = empresas.find(e => e.id === empresaId);
+
+      // fallback si no encuentra
+      if (!empresa) {
+        empresa = empresas[0];
+      }
 
       // --- Fondo dinámico de la sección PERFIL ---
       const seccionPerfil = document.querySelector('.perfil');
@@ -75,7 +82,7 @@
       document.querySelector('.logo img').alt = empresa.nombre;
       document.querySelector('.nombre-emprendimiento h2').textContent = empresa.nombre;
 
-      // Cambiar el título de la pestaña dinámicamente
+      // --- Título dinámico ---
       document.title = empresa.nombre + " - Microemprendedores Colón";
 
       // --- Iconos de contacto ---
@@ -94,17 +101,15 @@
       document.querySelector('.descripcion .breve').textContent = empresa.descripcionCorta;
       document.querySelector('.descripcion .larga').textContent = empresa.descripcionLarga;
 
-      // --- Carrusel con bucle infinito ---
+      // --- Carrusel ---
       const carrusel = document.getElementById('carruselTrack');
-      const repeticiones = 4; // cantidad de veces que se repite el set de fotos
-
+      const repeticiones = 4;
       let contenidoCarrusel = "";
       for (let i = 0; i < repeticiones; i++) {
         contenidoCarrusel += empresa.fotos
           .map(foto => `<div class="carrusel-slide"><img src="${foto}" alt="${empresa.nombre}" /></div>`)
           .join('');
       }
-
       carrusel.innerHTML = contenidoCarrusel;
 
     } catch (error) {
@@ -112,9 +117,9 @@
     }
   }
 
-  // --- Ejecutar la inicialización ---
   inicializar();
 </script>
+
 
 
    
