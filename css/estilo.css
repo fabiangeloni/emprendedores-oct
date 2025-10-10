@@ -1350,7 +1350,7 @@ a.info-value {
 
     /* Botón volver arriba más pequeño en móvil */
     .btn-volver-arriba {
-        bottom: 20px;
+        bottom: 80px;
         right: 20px;
         width: 45px;
         height: 45px;
