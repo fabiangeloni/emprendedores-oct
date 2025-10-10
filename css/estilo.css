@@ -1356,6 +1356,7 @@ a.info-value {
         height: 45px;
         font-size: 1.1rem;
     }
+   .sidebar-filtros-iconos {z-index: 9;}
 }
 
 /* ========================================
