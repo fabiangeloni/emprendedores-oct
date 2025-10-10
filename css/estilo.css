@@ -527,7 +527,7 @@ body.menu-open {
 
     /* MOSTRAR BOTÓN HAMBURGUESA */
     .btn-hamburger {
-        display: flex;
+        display: none;
     }
 }
 
@@ -1315,6 +1315,15 @@ a.info-value {
         padding: 0 1rem 2rem;
     }
 
+    .sidebar-filtros-iconos p {
+    display: block;
+    /* padding: 0px 3px; */
+    color: #fff;
+    font-size: 7px;
+    text-align: center;
+    margin: 0px auto;
+}
+
     .footer-brand {
         grid-column: span 1;
         text-align: center;
@@ -1396,7 +1405,7 @@ a.info-value {
     }
 
     .btn-volver-arriba {
-        bottom: 15px;
+        bottom: 70px;
         right: 15px;
         width: 40px;
         height: 40px;
