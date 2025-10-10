@@ -590,6 +590,26 @@
   "categoria": "Artesanias",
   "haceEnvios": false,
   "urgencias": false
+},
+{
+  "nombre": "Luna Azul Accesorios",
+  "direccion": "",
+  "telefono": "2473475800",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/LUNA-AZUL-ACCESORIOS/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/LUNA-AZUL-ACCESORIOS/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/LUNA-AZUL-ACCESORIOS/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/LUNA-AZUL-ACCESORIOS/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/LUNA-AZUL-ACCESORIOS/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/LUNA-AZUL-ACCESORIOS/FOTOS/5.jpg"
+  ],
+  "facebook": "https://www.facebook.com/search/top?q=luciana%20albarracin",
+  "instagram": "https://www.instagram.com/lunaazul_acce/",
+  "descripcionCorta": "Accesorios artesanales en macramé, sublimados y más, hechos a mano con amor y estilo.",
+  "descripcionLarga": "Luna Azul Accesorios nos ofrece un universo artesanal donde cada pieza cuenta una historia. Diseñamos y elaboramos a mano pulseras en macramé, collares, straps para celular y llaveros, combinando creatividad, color y estilo propio. A lo artesanal sumamos nuevas propuestas como colitas para el pelo, llaveros sublimados, llaveros de goma, broches, vinchas y mucho más, pensadas para acompañarte en el día a día con un toque único.\nEn Luna Azul, cada creación está hecha con dedicación y detalle, reflejando la pasión por lo hecho a mano y la búsqueda constante de innovación. Nos encontrás siempre en ferias, compartiendo nuestro trabajo y conectando con quienes valoran lo auténtico. Hecho con hilo, color y mucho corazón.",
+  "categoria": "Artesanias",
+  "haceEnvios": true,
+  "urgencias": false
 }
 
 
