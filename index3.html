@@ -60,32 +60,35 @@
       if (!response.ok) throw new Error("No se pudo cargar el JSON");
       const empresas = await response.json();
 
-      // Obtener parámetro "id" de la URL
+      // --- Obtener parámetro "id" de la URL ---
       const params = new URLSearchParams(window.location.search);
-      const empresaId = parseInt(params.get('id'));
+      const empresaId = params.get('id'); // STRING, no parseInt
 
-      // Buscar empresa por ID
-      let empresa = empresas.find(e => e.id === empresaId);
+      // --- Buscar empresa por ID ---
+      let empresa = empresas.find(
+        e => e.id.toLowerCase() === (empresaId || '').toLowerCase()
+      );
 
+      // fallback si no encuentra
       if (!empresa) {
-        empresa = empresas[0]; // fallback si no encuentra
+        empresa = empresas[0];
       }
 
-      // Fondo dinámico
+      // --- Fondo dinámico de la sección PERFIL ---
       const seccionPerfil = document.querySelector('.perfil');
       if (empresa.fotos && empresa.fotos.length > 0) {
         seccionPerfil.style.backgroundImage = `url('${empresa.fotos[0]}')`;
       }
 
-      // Foto y nombre
+      // --- Foto y nombre ---
       document.querySelector('.logo img').src = empresa.fotoPerfil;
       document.querySelector('.logo img').alt = empresa.nombre;
       document.querySelector('.nombre-emprendimiento h2').textContent = empresa.nombre;
 
-      // Título dinámico
+      // --- Título dinámico ---
       document.title = empresa.nombre + " - Microemprendedores Colón";
 
-      // Iconos de contacto
+      // --- Iconos de contacto ---
       const iconos = document.querySelector('.iconos-contacto');
       iconos.innerHTML = `
         <a href="tel:${empresa.telefono}" target="_blank"><i class="fas fa-phone"></i></a>
@@ -94,14 +97,14 @@
         <a href="${empresa.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>
       `;
 
-      // Botón WhatsApp
+      // --- Botón WhatsApp ---
       document.querySelector('.boton-wsp a').href = `https://wa.me/54${empresa.telefono}`;
 
-      // Descripciones
+      // --- Descripciones ---
       document.querySelector('.descripcion .breve').textContent = empresa.descripcionCorta;
       document.querySelector('.descripcion .larga').textContent = empresa.descripcionLarga;
 
-      // Carrusel
+      // --- Carrusel ---
       const carrusel = document.getElementById('carruselTrack');
       const repeticiones = 4;
       let contenidoCarrusel = "";
@@ -117,13 +120,10 @@
     }
   }
 
-  inicializar();
+  // Esperar a que el DOM esté listo
+  document.addEventListener('DOMContentLoaded', inicializar);
 </script>
-
-
-
-
-   
+  
 
 </body>
 </html>
