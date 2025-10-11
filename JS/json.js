@@ -4,55 +4,63 @@ document.addEventListener("DOMContentLoaded", () => {
   const buscador = document.getElementById("buscador");
   const form = document.getElementById("form-buscador");
   const botones = document.querySelectorAll(".filtro-btn");
+  const tituloTarjetas = document.getElementById("titulo-tarjetas"); // h2 arriba del contenedor
 
   let empresas = [];
   let filtroCategoria = "todas";
 
-  function mostrarTarjetas(empresasFiltradas) {
-  contenedor.innerHTML = "";
+function mostrarTarjetas(empresasFiltradas) {
+    contenedor.innerHTML = "";
 
-  // Mezclar aleatoriamente
-  const mezcladas = [...empresasFiltradas];
-  for (let i = mezcladas.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [mezcladas[i], mezcladas[j]] = [mezcladas[j], mezcladas[i]];
-  }
+    if (tituloTarjetas) {
+        tituloTarjetas.textContent = `Mostrando ${empresasFiltradas.length} emprendedor${empresasFiltradas.length !== 1 ? "es" : ""}`;
+    }
 
-  // Mostrar las tarjetas
-  mezcladas.forEach(empresa => {
-    const tarjeta = document.createElement("div");
-    tarjeta.classList.add("tarjeta");
-    tarjeta.dataset.categoria = empresa.categoria.toLowerCase();
+    // Mezclar aleatoriamente
+    const mezcladas = [...empresasFiltradas];
+    for (let i = mezcladas.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [mezcladas[i], mezcladas[j]] = [mezcladas[j], mezcladas[i]];
+    }
 
-    const img = document.createElement("img");
-    img.src = empresa.fotoPerfil;
-    img.alt = empresa.nombre;
+    mezcladas.forEach(empresa => {
+        const tarjeta = document.createElement("div");
+        tarjeta.classList.add("tarjeta");
+        tarjeta.dataset.categoria = empresa.categoria.toLowerCase();
 
-    const tag = document.createElement("span");
-    tag.classList.add("categoria-tag");
-    tag.textContent = empresa.categoria;
+        const img = document.createElement("img");
+        img.src = empresa.fotoPerfil;
+        img.alt = empresa.nombre;
 
-    const titulo = document.createElement("h2");
-    titulo.classList.add("titulo");
-    titulo.textContent = empresa.nombre;
+        const tag = document.createElement("span");
+        tag.classList.add("categoria-tag");
+        tag.textContent = empresa.categoria;
 
-    const desc = document.createElement("p");
-    desc.textContent = empresa.descripcionCorta;
+        const titulo = document.createElement("h2");
+        titulo.classList.add("titulo");
+        titulo.textContent = empresa.nombre;
 
-    const boton = document.createElement("button");
-    boton.textContent = "Ver Más";
-    boton.addEventListener("click", () => alert(empresa.descripcionLarga));
+        const desc = document.createElement("p");
+        desc.textContent = empresa.descripcionCorta;
 
-    tarjeta.appendChild(img);
-    tarjeta.appendChild(tag);
-    tarjeta.appendChild(titulo);
-    tarjeta.appendChild(desc);
-    tarjeta.appendChild(boton);
+        const boton = document.createElement("button");
+        boton.textContent = "Ver Más";
+        boton.addEventListener("click", () => {
+            window.location.href = `empresa.html?id=${empresa.id}`;
+        });
 
-    contenedor.appendChild(tarjeta);
-  });
+        tarjeta.appendChild(img);
+        tarjeta.appendChild(tag);
+        tarjeta.appendChild(titulo);
+        tarjeta.appendChild(desc);
+        tarjeta.appendChild(boton);
+
+        contenedor.appendChild(tarjeta);
+    });
 }
 
+
+  // Función que aplica filtros por categoría y buscador
   function aplicarFiltros() {
     const texto = buscador.value.toLowerCase();
     const filtradas = empresas.filter(emp => {
@@ -83,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Mostrar todas las tarjetas al inicio
       mostrarTarjetas(empresas);
 
-      // Escucha de botones de categoría (ahora dentro de .then para tener 'empresas')
+      // Escucha de botones de categoría (dentro del .then para tener 'empresas')
       botones.forEach(btn => {
         btn.addEventListener("click", e => {
           e.preventDefault();
