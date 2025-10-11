@@ -1596,3 +1596,97 @@ a {
         color: #333;
         margin-top: 8px;
     }
+
+
+.enlaces-microemprendedores {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+  background-color: var(--color-blanco);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.enlaces-microemprendedores h1 {
+  color: var(--color-rosa);
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.enlaces-microemprendedores ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* separación solicitada */
+}
+
+.enlaces-microemprendedores li {
+  display: flex;
+  justify-content: center;
+}
+
+.enlaces-microemprendedores div {
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  width: 100%;
+  max-width: 700px;
+  padding: 1.8rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.enlaces-microemprendedores div:hover {
+  background-color: var(--color-verde-hover);
+  transform: translateY(-6px);
+}
+
+.enlaces-microemprendedores h3 {
+  font-size: 1.4rem;
+  color: var(--color-blanco);
+  margin-bottom: 0.6rem;
+}
+
+.enlaces-microemprendedores a {
+  font-size: 18px;
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.enlaces-microemprendedores a:hover {
+  color: var(--color-rosa-hover);
+  border-color: var(--color-rosa-hover);
+}
+
+/* Sombras y efecto suave para los títulos */
+.enlaces-microemprendedores h1,
+.enlaces-microemprendedores h3 {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .enlaces-microemprendedores {
+    padding: 2rem 1rem;
+  }
+
+  .enlaces-microemprendedores h1 {
+    font-size: 2rem;
+  }
+
+  .enlaces-microemprendedores div {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .enlaces-microemprendedores a {
+    font-size: 16px;
+  }
+}
