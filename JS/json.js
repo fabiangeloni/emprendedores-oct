@@ -6,28 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const botones = document.querySelectorAll(".filtro-btn");
   const tituloTarjetas = document.getElementById("titulo-tarjetas");
 
-  // Validación de elementos DOM
   if (!contenedor || !buscador || !form || !tituloTarjetas) {
     console.error('Faltan elementos clave en el DOM');
     return;
   }
-  console.log('Todos los elementos DOM existen');
 
-  // Variables globales
   let empresas = [];
   let filtroCategoria = "todas";
 
-  // Función que muestra las tarjetas
+  // Función para mostrar tarjetas
   function mostrarTarjetas(empresasFiltradas) {
-    console.log('Empresas a mostrar:', empresasFiltradas.length, empresasFiltradas);
     contenedor.innerHTML = "";
+    tituloTarjetas.textContent = `Mostrando ${empresasFiltradas.length} emprendedor${empresasFiltradas.length !== 1 ? "es" : ""}`;
 
-    // Actualizar contador
-    if (tituloTarjetas) {
-      tituloTarjetas.textContent = `Mostrando ${empresasFiltradas.length} emprendedor${empresasFiltradas.length !== 1 ? "es" : ""}`;
-    }
-
-    // Mezclar aleatoriamente
     const mezcladas = [...empresasFiltradas];
     for (let i = mezcladas.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -65,10 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Función de filtrado
+  // Función de filtrado por texto y categoría
   function aplicarFiltros() {
     const texto = buscador.value.toLowerCase();
-    console.log('Texto a buscar:', texto, 'Categoría:', filtroCategoria);
     const filtradas = empresas.filter(emp => {
       const coincideCategoria = filtroCategoria === "todas" || (emp.categoria && emp.categoria.toLowerCase() === filtroCategoria);
       const coincideTexto = Object.values(emp).some(valor => {
@@ -82,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarTarjetas(filtradas);
   }
 
-  // Cargar JSON y luego inicializar todo
+  // Cargar JSON
   fetch("json/empresas.json")
     .then(response => {
       if (!response.ok) throw new Error("No se pudo cargar el JSON");
@@ -90,30 +80,22 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(data => {
       empresas = data;
-      console.log('Empresas cargadas del JSON:', empresas.length, empresas);
-
-      // Mostrar todas las tarjetas al inicio
       mostrarTarjetas(empresas);
 
-      // Submit del formulario
+      // Filtrado al enviar formulario
       form.addEventListener("submit", e => {
-        e.preventDefault();
-        console.log('Formulario enviado');
+        e.preventDefault(); // evita recargar página
         aplicarFiltros();
       });
 
-      // Filtrado al escribir
-      buscador.addEventListener("input", () => {
-        console.log('Input en buscador');
-        aplicarFiltros();
-      });
+      // Filtrado en tiempo real al escribir
+      buscador.addEventListener("input", aplicarFiltros);
 
-      // Botones de categoría
+      // Filtrado por botones de categoría
       botones.forEach(btn => {
         btn.addEventListener("click", e => {
           e.preventDefault();
           filtroCategoria = btn.dataset.categoria ? btn.dataset.categoria.toLowerCase() : "todas";
-          console.log('Botón de categoría clickeado:', filtroCategoria);
           aplicarFiltros();
         });
       });
