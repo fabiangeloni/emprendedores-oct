@@ -39,7 +39,7 @@
         </div>
 
         <div class="boton-wsp">
-            <a href="#" style="display:none;">Contacto directo</a>
+            <a href="#" style="display:none;">WhatsApp</a>
         </div>
     </div>
 </section>
@@ -121,7 +121,8 @@
       // --- Botón WhatsApp ---
       const botonWsp = document.querySelector('.boton-wsp a');
       if (empresa.telefono && empresa.telefono.trim() !== "") {
-        botonWsp.href = `https://wa.me/54${empresa.telefono}`;
+        botonWsp.href = `https://wa.me/54${empresa.telefono}?text=${encodeURIComponent('Hola! Te encontré en https://colon.microemprendedores.com.ar y quiero hacerte una consulta.')}`;
+
         botonWsp.style.display = "inline-block";
       } else {
         botonWsp.style.display = "none";
