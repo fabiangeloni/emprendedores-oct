@@ -1759,3 +1759,73 @@ cubic-bezier(.4, 1, .4, 1.1), box-shadow 0.25s
 cubic-bezier(.4, 1, .4, 1.1);
     text-decoration: none;
 }
+
+
+/* === Buscador principal visible en escritorio === */
+.buscador-principal {
+    display: block;
+    padding: 10px 20px;
+    background: #fff;
+}
+
+.buscador-principal .search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.buscador-principal input {
+    border: none;
+    padding: 8px 12px;
+    flex: 1;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.buscador-principal button {
+    background: #d62828;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+.buscador-principal button:hover {
+    background: #b71d1d;
+}
+
+/* === Buscador móvil debajo del header === */
+.mobile-search-container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mobile-search-container.show {
+    max-height: 80px; /* altura del input + padding */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    /* Ocultar buscador de escritorio */
+    .buscador-principal {
+        display: none;
+    }
+
+    /* Mostrar botón móvil */
+    .btn-search-mobile {
+        display: flex;
+    }
+
+    /* Mostrar buscador móvil como bloque */
+    .mobile-search-container {
+        display: block;
+    }
+}
+
+
