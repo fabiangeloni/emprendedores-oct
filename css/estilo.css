@@ -1454,3 +1454,145 @@ a {
     a:hover {
         color: #555;
     }
+
+
+.contenedor-staff {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.contenedor-icono{
+    background-color: #f3e5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px auto;
+}
+
+    .icono {
+    font-size: 70px;
+    color: #00A699;
+}
+
+.tarjeta-staff {
+    background-color: #f8f3f4;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s;
+    padding: 40px;
+    width: 300px;
+}
+
+ .tarjeta-staff:hover {
+        transform: scale(1.03);
+    }
+
+    .tarjeta-staff h3 {
+        margin: 10px;
+        font-size: 1.1rem;
+        color: #f53658;
+    }
+
+    h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #f53658;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.emprendedores-grid {
+   display: flex;
+    gap: 20px;
+    padding: 40px;
+    background-color: #fff;
+    border: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Modal general */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-contenido {
+    background: white;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 90%;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    overflow-y: auto;
+    max-height: 90vh;
+    height: 400px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #888;
+}
+
+.modal-contenido h2 {
+    margin: 10px 0;
+    color: #4a148c;
+    font-size: 1.8rem;
+}
+
+.modal-contenido p {
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Galería de personas */
+.galeria-personas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.persona {
+    text-align: center;
+    width: 120px;
+    height: 120px;
+}
+
+    .persona img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #00A699;
+    }
+
+    .persona p {
+        font-size: 0.9rem;
+        color: #333;
+        margin-top: 8px;
+    }

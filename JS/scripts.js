@@ -189,4 +189,30 @@ document.addEventListener('DOMContentLoaded', function () {
             if (e.key === 'Enter') realizarBusqueda(searchInputMobile);
         });
     }
+    
 });
+
+// STAFF
+function abrirModal(nombre, descripcion, personas) {
+    document.getElementById('modal-nombre').textContent = nombre;
+    document.getElementById('modal-descripcion').textContent = descripcion;
+
+    const galeria = document.getElementById('modal-galeria');
+    galeria.innerHTML = ''; // limpiar contenido anterior
+
+    personas.forEach(p => {
+        const div = document.createElement('div');
+        div.classList.add('persona');
+        div.innerHTML = `
+        <img src="${p.img}" alt="${p.nombre}">
+        <p>${p.nombre}</p>
+      `;
+        galeria.appendChild(div);
+    });
+
+    document.getElementById('modal').style.display = 'flex';
+}
+
+function cerrarModal() {
+    document.getElementById('modal').style.display = 'none';
+}
