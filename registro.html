@@ -63,51 +63,27 @@
             </header>
             
             <main>
-  <div class="enlaces-microemprendedores">
-    <h1>Microemprendedores</h1>
-    <ul>
-      <li>
-        <div class="pymes">
-          <h3>Pymes:</h3>
-          <a href="https://www.argentina.gob.ar/servicio/registrar-una-pyme" target="_blank">
-            Registrar una PyME
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="emprendedores">
-          <h3>Emprendedores:</h3>
-          <a href="https://www.argentina.gob.ar/produccion/emprendedores" target="_blank">
-            Producción - Emprendedores
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="capacitar">
-          <h3>Capacitar:</h3>
-          <a href="https://www.argentina.gob.ar/capacitar" target="_blank">
-            Portal Capacitar
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="fundacion-empujar">
-          <h3>Fundación Empujar:</h3>
-          <a href="https://www.fundacionempujar.org" target="_blank">
-            fundacionempujar.org
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="came-joven">
-          <h3>CAME Joven:</h3>
-          <a href="https://www.redcame.org.ar/seccion/13/came-joven" target="_blank">
-            redcame.org.ar/came-joven
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
+  <section class="section pre-registration">
+      <h1><i class="fa-solid fa-user-plus"></i> Preinscribite y empezá tu camino</h1>
+      <br>
+      <form class="pre-form" action="https://formsubmit.co/fabiangeloni@gmail.com" method="POST">
+            <input class="formulario-input" type="text" name="nombre" placeholder="Tu nombre" required><br>
+            <input class="formulario-input" type="email" name="email" placeholder="Tu email" required><br>
+            <input class="formulario-input" type="tel" name="telefono" placeholder="Tu teléfono" required><br>
+            <textarea class="formulario-area" name="mensaje" placeholder="Contanos cómo se llama tu emprendimiento y una breve descripción. Nos comunicaremos luego para más detalles..." required></textarea><br>
+            <label>
+              <input type="checkbox" name="terminos" required>
+              Acepto los <a href="bases.html" target="_blank">Bases y condiciones</a>
+            </label>
+            <button class="formulario-boton btn-main" type="submit">Registrarme</button>
+
+            <!-- Opcionales: -->
+            <input type="hidden" name="_next" value="https://microemprendedores.com.ar/gracias.html"> <!-- redirige después de enviar -->
+            <input type="hidden" name="_captcha" value="false"> <!-- desactiva CAPTCHA -->
+          </form>
+      
+      
+    </section>
             </main>
              <footer class="footer-profesional">
                 <div class="footer-container">
@@ -142,7 +118,7 @@
                         <h3 class="footer-titulo">Enlaces Rápidos</h3>
                         <ul class="footer-lista">
                             <li>
-                                <a href="registro.html">
+                                <a href="index.html">
                                     <i class="fas fa-chevron-right"></i> Inicio
                                 </a>
                                 <a href="Microemprendedores.html">
@@ -204,7 +180,7 @@
                         </div>
 
                         <!-- Botón de preinscripción -->
-                        <a href="formulario-preinscripcion.html" class="btn-preinscripcion">
+                        <a href="registro.html" class="btn-preinscripcion">
                             <i class="fas fa-user-plus"></i>
                             <span>Registra tu Emprendimiento</span>
                             <i class="fas fa-arrow-right"></i>
