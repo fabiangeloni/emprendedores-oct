@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
         boton.addEventListener('click', (e) => {
             e.preventDefault();
 
-            // Tomo la categoría desde data-categoria 
+            // Tomo la categorï¿½a desde data-categoria 
             const rawCat = (boton.dataset.categoria || boton.getAttribute('href') || '').toString().toLowerCase().trim();
             const categoria = rawCat.replace('#', ''); // quita posible #
             const mostrarTodas = aliasTodas.has(categoria);
 
             tarjetas.forEach(tarjeta => {
-                // Leo la categoría de la tarjeta (dataset)
+                // Leo la categorï¿½a de la tarjeta (dataset)
                 const tRaw = (tarjeta.dataset.categoria || '').toString().toLowerCase().trim();
                 const tCat = tRaw.replace('#', '');
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // Resaltar botón activo
+            // Resaltar botï¿½n activo
             botones.forEach(b => b.classList.remove('activo'));
             boton.classList.add('activo');
         });
@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Botón volver arriba
+// Botï¿½n volver arriba
 document.addEventListener('DOMContentLoaded', function () {
     const btnVolverArriba = document.getElementById('btnVolverArriba');
 
-    // Mostrar/ocultar botón según scroll
+    // Mostrar/ocultar botï¿½n segï¿½n scroll
     window.addEventListener('scroll', function () {
         if (window.pageYOffset > 300) {
             btnVolverArriba.classList.add('visible');
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Animación de entrada para elementos del footer
+    // Animaciï¿½n de entrada para elementos del footer
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -83,12 +83,12 @@ document.addEventListener('DOMContentLoaded', function () {
 // Esperar a que cargue el DOM
         document.addEventListener('DOMContentLoaded', function() {
     
-    /* === MENÚ HAMBURGUESA === */
+    /* === MENï¿½ HAMBURGUESA === */
     const btnHamburger = document.getElementById('btnHamburger');
         const headerNav = document.getElementById('headerNav');
         const menuOverlay = document.getElementById('menuOverlay');
 
-        // Abrir/cerrar menú
+        // Abrir/cerrar menï¿½
         if (btnHamburger) {
             btnHamburger.addEventListener('click', function () {
                 btnHamburger.classList.toggle('active');
@@ -119,12 +119,12 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 
-        /* === BÚSQUEDA MÓVIL === */
+        /* === Bï¿½SQUEDA Mï¿½VIL === */
         const btnSearchMobile = document.getElementById('btnSearchMobile');
         const searchMobile = document.getElementById('searchMobile');
         const btnCloseMobile = document.getElementById('btnCloseMobile');
 
-        // Abrir búsqueda móvil
+        // Abrir bï¿½squeda mï¿½vil
         if (btnSearchMobile) {
             btnSearchMobile.addEventListener('click', function () {
                 searchMobile.classList.add('active');
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 
-        // Cerrar búsqueda móvil
+        // Cerrar bï¿½squeda mï¿½vil
         if (btnCloseMobile) {
             btnCloseMobile.addEventListener('click', function () {
                 searchMobile.classList.remove('active');
@@ -158,17 +158,17 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScroll = currentScroll;
     });
 
-        /* === REALIZAR BÚSQUEDA === */
+        /* === REALIZAR Bï¿½SQUEDA === 
         function realizarBusqueda(input) {
         const termino = input.value.trim();
         if (termino !== '') {
             console.log('Buscando:', termino);
-        // Aquí puedes redirigir o filtrar
+        // Aquï¿½ puedes redirigir o filtrar
         window.location.href = `index2.html?buscar=${encodeURIComponent(termino)}`;
         }
     }
 
-        // Búsqueda desktop
+        // Bï¿½squeda desktop
         const searchBtnDesktop = document.querySelector('.header-search-desktop .search-btn');
         const searchInputDesktop = document.querySelector('.header-search-desktop .search-input');
 
@@ -177,9 +177,9 @@ document.addEventListener('DOMContentLoaded', function () {
         searchInputDesktop.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') realizarBusqueda(searchInputDesktop);
         });
-    }
+    }*/
 
-        // Búsqueda móvil
+        // Bï¿½squeda mï¿½vil
         const searchBtnMobile = document.querySelector('.search-btn-mobile');
         const searchInputMobile = document.querySelector('.search-input-mobile');
 
