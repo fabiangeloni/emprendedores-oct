@@ -1051,6 +1051,26 @@
   "categoria": "Comerciantes",
   "haceEnvios": true,
   "urgencias": false
+},
+{ "id": "dulceaventura",
+  "nombre": "Dulce Aventura",
+  "direccion": "",
+  "telefono": "2473532857",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/foto-perfil.jpg",
+  "fotos": [
+    "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/5.jpg"
+  ],
+  "facebook": "",
+  "instagram": "https://www.instagram.com/somosdulceaventura/",
+  "descripcionCorta": "Carrito golosinero para cumpleaños y eventos. ¡Endulzá tus fiestas con Dulce Aventura! 🎉🍬",
+  "descripcionLarga": "Dulce Aventura nos invita a vivir una experiencia mágica y llena de color con su carrito golosinero ideal para cualquier tipo de evento. Cumpleaños, fiestas temáticas, reuniones familiares o eventos empresariales: cada ocasión se transforma en un momento especial gracias a su propuesta dulce, personalizada y visualmente encantadora.\nDetrás de cada presentación hay una cuidada selección de golosinas, una ambientación pensada al detalle y una atención que combina creatividad, alegría y cercanía. Con Dulce Aventura, los festejos se vuelven inolvidables: no solo endulzan los eventos, sino que también suman ese toque decorativo y fotogénico que todos buscan.\nUna opción ideal para quienes quieren sorprender a sus invitados y crear recuerdos con sabor a felicidad.",
+  "categoria": "Gastronomia",
+  "haceEnvios": false,
+  "urgencias": false
 }
 
 
