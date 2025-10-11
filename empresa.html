@@ -9,53 +9,50 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<div class="logo-microemprendedor"><a href="https://microemprendedores.com.ar"><img src="img/logo-chico.png" alt="Logo Microemprendedores Colón" /></a></div>
-    <!-- Sección de perfil con logo y datos -->
-    <section class="perfil">
-        <div class="logo">
-            <img src="img/Logo Panadería Rústico.jpg" alt="Logo Claudia Álvarez" />
+<div class="logo-microemprendedor">
+  <a href="https://microemprendedores.com.ar">
+    <img src="img/logo-chico.png" alt="Logo Microemprendedores Colón" />
+  </a>
+</div>
+
+<!-- Sección de perfil con logo y datos -->
+<section class="perfil">
+    <div class="logo">
+        <img src="" alt="" />
+    </div>
+
+    <div class="info">
+        <div class="nombre-emprendimiento">
+            <h2></h2>
         </div>
 
-        <div class="info">
-            <div class="nombre-emprendimiento">
-                <h2>Panadería Rústico</h2>
-            </div>
-
-            <div class="iconos-contacto">
-                <a href="tel:2473475255" target="_blank"><i class="fas fa-phone"></i></a>
-                <a href="https://www.google.com/maps?q=Panadería+Rústico+Colón+Buenos+Aires" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
-                <a href="https://www.instagram.com/claudia.alvarez" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/claudia.alvarez.diseno" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            </div>
-
-            <div class="boton-wsp">
-                <a href="https://wa.me/542473475255" target="_blank">Contacto directo</a>
-            </div>
+        <div class="iconos-contacto">
+            <!-- Iconos dinámicos aquí -->
         </div>
-    </section>
 
-    <!-- Sección de descripción -->
-    <section class="descripcion">
-        <p class="breve">Panadería artesanal con esencia local y sabor auténtico.</p>
-        <p class="larga">
-        Nos dedicamos a crear productos horneados con ingredientes seleccionados, técnicas tradicionales y un toque moderno. Cada pieza refleja nuestra pasión por el detalle, la calidad y el amor por lo hecho en casa.
-        </p>
-    </section>
-
-
-    <!-- Carrusel de imágenes -->
-    <section class="carrusel">
-        <div class="carrusel-track" id="carruselTrack">
-            
-            
+        <div class="boton-wsp">
+            <a href="#" style="display:none;">Contacto directo</a>
         </div>
-    </section>
-    <footer>
+    </div>
+</section>
+
+<!-- Sección de descripción -->
+<section class="descripcion">
+    <p class="breve"></p>
+    <p class="larga"></p>
+</section>
+
+<!-- Carrusel de imágenes -->
+<section class="carrusel">
+    <div class="carrusel-track" id="carruselTrack"></div>
+</section>
+
+<footer>
   <p>&copy; 2025 Microemprendedores Colón - Todos los derechos reservados.</p>
   <a href="https://microemprendedores.com.ar"><img src="img/logo-footer.png" alt="Logo Microemprendedores Colón"/></a>
-    </footer>
+</footer>
+
 <script>
-  // Ruta absoluta al JSON en GitHub Pages
   const urlJSON = 'https://fabiangeloni.github.io/emprendedores-oct/json/empresas.json';
 
   async function inicializar() {
@@ -66,17 +63,11 @@
 
       // --- Obtener parámetro "id" de la URL ---
       const params = new URLSearchParams(window.location.search);
-      const empresaId = params.get('id'); // STRING, no parseInt
+      const empresaId = params.get('id');
 
       // --- Buscar empresa por ID ---
-      let empresa = empresas.find(
-        e => e.id.toLowerCase() === (empresaId || '').toLowerCase()
-      );
-
-      // fallback si no encuentra
-      if (!empresa) {
-        empresa = empresas[0];
-      }
+      let empresa = empresas.find(e => e.id.toLowerCase() === (empresaId || '').toLowerCase());
+      if (!empresa) empresa = empresas[0]; // fallback
 
       // --- Fondo dinámico de la sección PERFIL ---
       const seccionPerfil = document.querySelector('.perfil');
@@ -85,24 +76,48 @@
       }
 
       // --- Foto y nombre ---
-      document.querySelector('.logo img').src = empresa.fotoPerfil;
-      document.querySelector('.logo img').alt = empresa.nombre;
+      const logoImg = document.querySelector('.logo img');
+      logoImg.src = empresa.fotoPerfil;
+      logoImg.alt = empresa.nombre;
       document.querySelector('.nombre-emprendimiento h2').textContent = empresa.nombre;
 
       // --- Título dinámico ---
       document.title = empresa.nombre + " - Microemprendedores Colón";
 
-      // --- Iconos de contacto ---
+      // --- Iconos de contacto dinámicos ---
       const iconos = document.querySelector('.iconos-contacto');
-      iconos.innerHTML = `
-        <a href="tel:${empresa.telefono}" target="_blank"><i class="fas fa-phone"></i></a>
-        <a href="https://www.google.com/maps?q=${encodeURIComponent(empresa.empresa + ' ' + empresa.direccion)}" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
-        <a href="${empresa.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="${empresa.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      `;
+      let htmlIconos = "";
+
+      // Teléfono fijo
+      if (empresa.telefonoFijo && empresa.telefonoFijo.trim() !== "") {
+        htmlIconos += `<a href="tel:${empresa.telefonoFijo}" target="_blank"><i class="fas fa-phone"></i></a>`;
+      }
+
+      // Dirección
+      if (empresa.direccion && empresa.direccion.trim() !== "") {
+        htmlIconos += `<a href="https://www.google.com/maps?q=${encodeURIComponent(empresa.nombre + ' ' + empresa.direccion)}" target="_blank"><i class="fas fa-map-marker-alt"></i></a>`;
+      }
+
+      // Instagram
+      if (empresa.instagram && empresa.instagram.trim() !== "") {
+        htmlIconos += `<a href="${empresa.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>`;
+      }
+
+      // Facebook
+      if (empresa.facebook && empresa.facebook.trim() !== "") {
+        htmlIconos += `<a href="${empresa.facebook}" target="_blank"><i class="fab fa-facebook-f"></i></a>`;
+      }
+
+      iconos.innerHTML = htmlIconos;
 
       // --- Botón WhatsApp ---
-      document.querySelector('.boton-wsp a').href = `https://wa.me/54${empresa.telefono}`;
+      const botonWsp = document.querySelector('.boton-wsp a');
+      if (empresa.telefono && empresa.telefono.trim() !== "") {
+        botonWsp.href = `https://wa.me/54${empresa.telefono}`;
+        botonWsp.style.display = "inline-block";
+      } else {
+        botonWsp.style.display = "none";
+      }
 
       // --- Descripciones ---
       document.querySelector('.descripcion .breve').textContent = empresa.descripcionCorta;
@@ -112,10 +127,12 @@
       const carrusel = document.getElementById('carruselTrack');
       const repeticiones = 4;
       let contenidoCarrusel = "";
-      for (let i = 0; i < repeticiones; i++) {
-        contenidoCarrusel += empresa.fotos
-          .map(foto => `<div class="carrusel-slide"><img src="${foto}" alt="${empresa.nombre}" /></div>`)
-          .join('');
+      if (empresa.fotos && empresa.fotos.length > 0) {
+        for (let i = 0; i < repeticiones; i++) {
+          contenidoCarrusel += empresa.fotos
+            .map(foto => `<div class="carrusel-slide"><img src="${foto}" alt="${empresa.nombre}" /></div>`)
+            .join('');
+        }
       }
       carrusel.innerHTML = contenidoCarrusel;
 
@@ -124,7 +141,6 @@
     }
   }
 
-  // Esperar a que el DOM esté listo
   document.addEventListener('DOMContentLoaded', inicializar);
 </script>
 
@@ -157,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isDragging) return;
     e.preventDefault();
     const x = e.pageX - track.offsetLeft;
-    const walk = (x - startX) * 1.3; // sensibilidad
+    const walk = (x - startX) * 1.3;
     track.scrollLeft = scrollLeft - walk;
   });
 
@@ -176,16 +192,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isDragging) return;
     const x = e.touches[0].pageX - track.offsetLeft;
     const walk = (x - startX) * 1.2;
-track.scrollTo({
-  left: scrollLeft - walk,
-  behavior: "smooth"
-});
+    track.scrollTo({
+      left: scrollLeft - walk,
+      behavior: "smooth"
+    });
   });
 });
 </script>
 
-  
-
 </body>
 </html>
-
