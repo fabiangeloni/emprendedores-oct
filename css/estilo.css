@@ -253,7 +253,7 @@ body.menu-open {
     height: 44px;
     border-radius: 50%;
     background-color: var(--color-gris-claro);
-    border: none;
+    border: 1px solid gray;
     cursor: pointer;
     align-items: center;
     justify-content: center;
@@ -332,6 +332,7 @@ body.menu-open {
     background-color: var(--color-blanco);
     border-top: 1px solid var(--color-gris-claro);
     transition: max-height 0.4s ease;
+    border: 1px solid gray;
 }
 
     .header-search-mobile.active {
@@ -373,6 +374,7 @@ body.menu-open {
     align-items: center;
     justify-content: center;
     transition: all var(--transition);
+    border: 1px solid gray;
 }
 
 .search-btn-mobile {

@@ -1,192 +1,163 @@
-// Script de filtrado para la barra lateral
-document.addEventListener('DOMContentLoaded', () => {
-    const botones = document.querySelectorAll('.filtro-btn');
-    const tarjetas = document.querySelectorAll('.tarjeta');
-    const aliasTodas = new Set(['todas', 'todos', 'all']);
+// === CARGA JSON EXTERNO ===
+let empresas = [];
 
-    // Si no hay botones o tarjetas, salir
-    if (!botones.length || !tarjetas.length) return;
+fetch("./json/empresas.json")
+  .then(response => {
+    if (!response.ok) throw new Error("No se pudo cargar el archivo JSON");
+    return response.json();
+  })
+  .then(data => {
+    empresas = data;
+    inicializar(); // Llama a la funci√≥n principal cuando los datos est√°n listos
+  })
+  .catch(error => console.error("Error al cargar empresas:", error));
 
-    botones.forEach(boton => {
-        boton.addEventListener('click', (e) => {
-            e.preventDefault();
 
-            // Tomo la categorÌa desde data-categoria 
-            const rawCat = (boton.dataset.categoria || boton.getAttribute('href') || '').toString().toLowerCase().trim();
-            const categoria = rawCat.replace('#', ''); // quita posible #
-            const mostrarTodas = aliasTodas.has(categoria);
+// === FUNCI√ìN PRINCIPAL ===
+function inicializar() {
+  // --- ELEMENTOS BASE ---
+  const contenedor = document.getElementById("tarjetas-container");
+  const titulo = document.getElementById("titulo-tarjetas");
 
-            tarjetas.forEach(tarjeta => {
-                // Leo la categorÌa de la tarjeta (dataset)
-                const tRaw = (tarjeta.dataset.categoria || '').toString().toLowerCase().trim();
-                const tCat = tRaw.replace('#', '');
+  // Limpia contenedor antes de renderizar (por si se vuelve a ejecutar)
+  contenedor.innerHTML = "";
+console.log(empresas);
+  // --- RENDER DE TARJETAS ---
+  empresas.forEach(empresa => {
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-                if (mostrarTodas || tCat === categoria) {
-                    // mostrar
-                    tarjeta.style.display = '';
-                } else {
-                    // ocultar
-                    tarjeta.style.display = 'none';
-                }
-            });
+    card.innerHTML = `
+      <div class="tarjeta">
+        <img src="${empresa.fotos?.[0] || 'img/default.jpg'}" alt="${empresa.nombre}">
+        <span class="categoria-tag">${empresa.categoria || 'Sin categor√≠a'}</span>
+        <h2 class="titulo">${empresa.nombre}</h2>
+        <p>${empresa.descripcionCorta || ''}</p>
+        ${empresa.delivery ? '<span class="delivery-tag">üöö Hace env√≠os</span>' : ''}
+        <button>Ver M√°s</button>
+      </div>
+    `;
 
-            // Resaltar botÛn activo
-            botones.forEach(b => b.classList.remove('activo'));
-            boton.classList.add('activo');
-        });
+    contenedor.appendChild(card);
+  });
+
+  titulo.textContent = "Todos los emprendedores";
+
+
+  // --- FUNCIONES AUXILIARES ---
+  function mostrarTodas() {
+    contenedor.querySelectorAll(".card").forEach(card => (card.style.display = "block"));
+    titulo.textContent = "Todos los emprendedores";
+  }
+
+
+  // --- FILTRO POR ICONOS ---
+  const botonesFiltro = document.querySelectorAll(".sidebar-filtros-iconos .filtro-btn");
+
+  botonesFiltro.forEach(boton => {
+    boton.addEventListener("click", e => {
+      e.preventDefault();
+      botonesFiltro.forEach(b => b.classList.remove("activo"));
+      boton.classList.add("activo");
+
+      const categoriaSeleccionada = boton.getAttribute("data-categoria");
+      const cards = contenedor.querySelectorAll(".card");
+
+      if (categoriaSeleccionada === "todas") {
+        mostrarTodas();
+        return;
+      }
+
+      cards.forEach(card => {
+        const categoria = card.querySelector(".categoria-tag").textContent.trim().toLowerCase();
+        card.style.display =
+          categoria === categoriaSeleccionada.toLowerCase() ? "block" : "none";
+      });
+
+      const nombreCat =
+        categoriaSeleccionada.charAt(0).toUpperCase() + categoriaSeleccionada.slice(1);
+      titulo.textContent = `Mostrando categor√≠a: ${nombreCat}`;
     });
-});
+  });
 
 
-// BotÛn volver arriba
-document.addEventListener('DOMContentLoaded', function () {
-    const btnVolverArriba = document.getElementById('btnVolverArriba');
+  // --- BUSCADOR ---
+  const formBuscar = document.getElementById("form-buscar");
+  const buscador = document.getElementById("buscador");
 
-    // Mostrar/ocultar botÛn seg˙n scroll
-    window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 300) {
-            btnVolverArriba.classList.add('visible');
-        } else {
-            btnVolverArriba.classList.remove('visible');
-        }
-    });
+  formBuscar.addEventListener("submit", e => {
+    e.preventDefault();
+    const texto = buscador.value.toLowerCase().trim();
+    const cards = contenedor.querySelectorAll(".card");
+    let huboCoincidencia = false;
 
-    // Scroll suave al hacer clic
-    btnVolverArriba.addEventListener('click', function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-
-    // AnimaciÛn de entrada para elementos del footer
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function (entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animado');
-            }
-        });
-    }, observerOptions);
-
-    // Observar columnas del footer
-    const footerColumnas = document.querySelectorAll('.footer-columna');
-    footerColumnas.forEach(columna => {
-        observer.observe(columna);
-    });
-});
-
-// Esperar a que cargue el DOM
-        document.addEventListener('DOMContentLoaded', function() {
-    
-    /* === MEN⁄ HAMBURGUESA === */
-    const btnHamburger = document.getElementById('btnHamburger');
-        const headerNav = document.getElementById('headerNav');
-        const menuOverlay = document.getElementById('menuOverlay');
-
-        // Abrir/cerrar men˙
-        if (btnHamburger) {
-            btnHamburger.addEventListener('click', function () {
-                btnHamburger.classList.toggle('active');
-                headerNav.classList.toggle('active');
-                menuOverlay.classList.toggle('active');
-                document.body.classList.toggle('menu-open');
-            });
-    }
-
-        // Cerrar al hacer clic en overlay
-        if (menuOverlay) {
-            menuOverlay.addEventListener('click', function () {
-                btnHamburger.classList.remove('active');
-                headerNav.classList.remove('active');
-                menuOverlay.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            });
-    }
-
-        // Cerrar al hacer clic en un link
-        const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-            link.addEventListener('click', function () {
-                btnHamburger.classList.remove('active');
-                headerNav.classList.remove('active');
-                menuOverlay.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            });
+    cards.forEach(card => {
+      const textoCard = card.textContent.toLowerCase();
+      if (textoCard.includes(texto)) {
+        card.style.display = "block";
+        huboCoincidencia = true;
+      } else {
+        card.style.display = "none";
+      }
     });
 
-        /* === B⁄SQUEDA M”VIL === */
-        const btnSearchMobile = document.getElementById('btnSearchMobile');
-        const searchMobile = document.getElementById('searchMobile');
-        const btnCloseMobile = document.getElementById('btnCloseMobile');
-
-        // Abrir b˙squeda mÛvil
-        if (btnSearchMobile) {
-            btnSearchMobile.addEventListener('click', function () {
-                searchMobile.classList.add('active');
-                setTimeout(() => {
-                    document.querySelector('.search-input-mobile').focus();
-                }, 300);
-            });
+    if (!texto) {
+      mostrarTodas();
+    } else if (huboCoincidencia) {
+      titulo.textContent = `Resultados para: "${texto}"`;
+    } else {
+      titulo.textContent = `No se encontraron resultados para: "${texto}"`;
     }
+  });
 
-        // Cerrar b˙squeda mÛvil
-        if (btnCloseMobile) {
-            btnCloseMobile.addEventListener('click', function () {
-                searchMobile.classList.remove('active');
-            });
-    }
 
-        /* === HEADER STICKY CON EFECTO SCROLL === */
-        const header = document.querySelector('.header-profesional');
-        let lastScroll = 0;
+  // --- ALEATORIAS Y CATEGOR√çAS ---
+  function mostrarAleatorias(contenedorId, cantidad) {
+    const cont = document.getElementById(contenedorId);
+    if (!cont) return;
+    cont.innerHTML = "";
 
-        window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
+    const aleatorias = [...empresas].sort(() => 0.5 - Math.random()).slice(0, cantidad);
 
-        // Agregar clase cuando se hace scroll
-        if (currentScroll > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-
-        lastScroll = currentScroll;
+    aleatorias.forEach(empresa => {
+      const card = document.createElement("div");
+      card.classList.add("cardchica");
+      card.innerHTML = `
+        <div class="img-cardchica"><img src="${empresa.fotos?.[0] || 'img/default.jpg'}" alt="${empresa.nombre}"></div>
+        <div class="cardchica-perfil"><img src="${empresa.fotoPerfil || 'img/perfil-default.png'}" alt="Perfil"></div>
+        <div class="cardchica-content">
+          <h3>${empresa.nombre}</h3>
+          <a href="#" class="btn">Ver m√°s</a>
+        </div>
+      `;
+      cont.appendChild(card);
     });
+  }
 
-        /* === REALIZAR B⁄SQUEDA === */
-        function realizarBusqueda(input) {
-        const termino = input.value.trim();
-        if (termino !== '') {
-            console.log('Buscando:', termino);
-        // AquÌ puedes redirigir o filtrar
-        window.location.href = `index2.html?buscar=${encodeURIComponent(termino)}`;
-        }
-    }
+  function mostrarCategoria(contenedorId, categoria) {
+    const cont = document.getElementById(contenedorId);
+    if (!cont) return;
+    cont.innerHTML = "";
 
-        // B˙squeda desktop
-        const searchBtnDesktop = document.querySelector('.header-search-desktop .search-btn');
-        const searchInputDesktop = document.querySelector('.header-search-desktop .search-input');
+    const filtradas = empresas.filter(e => e.categoria?.toLowerCase() === categoria.toLowerCase());
+    filtradas.forEach(empresa => {
+      const card = document.createElement("div");
+      card.classList.add("cardchica");
+      card.innerHTML = `
+        <div class="img-cardchica"><img src="${empresa.fotos?.[0] || 'img/default.jpg'}" alt="${empresa.nombre}"></div>
+        <div class="cardchica-perfil"><img src="${empresa.fotoPerfil || 'img/perfil-default.png'}" alt="Perfil"></div>
+        <div class="cardchica-content">
+          <h3>${empresa.nombre}</h3>
+          <a href="#" class="btn">Ver m√°s</a>
+        </div>
+      `;
+      cont.appendChild(card);
+    });
+  }
 
-        if (searchBtnDesktop && searchInputDesktop) {
-            searchBtnDesktop.addEventListener('click', () => realizarBusqueda(searchInputDesktop));
-        searchInputDesktop.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') realizarBusqueda(searchInputDesktop);
-        });
-    }
-
-        // B˙squeda mÛvil
-        const searchBtnMobile = document.querySelector('.search-btn-mobile');
-        const searchInputMobile = document.querySelector('.search-input-mobile');
-
-        if (searchBtnMobile && searchInputMobile) {
-            searchBtnMobile.addEventListener('click', () => realizarBusqueda(searchInputMobile));
-        searchInputMobile.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') realizarBusqueda(searchInputMobile);
-        });
-    }
-});
+  // --- LLAMADAS INICIALES ---
+  mostrarAleatorias("aleatorias", 10);
+  mostrarCategoria("gastronomia", "gastronomicos");
+  mostrarCategoria("servicios", "servicios");
+  mostrarCategoria("artesanos", "artesanos");
+}
