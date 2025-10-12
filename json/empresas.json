@@ -136,7 +136,7 @@
   "facebook": "",
   "instagram": "https://www.instagram.com/ceciangeloni/",
   "descripcionCorta": "Cuidado de la piel, make up y asesoramiento personalizado.",
-  "descripcionLarga": "Venta de productos de cosmética profesional. Cuidado de la piel, perfumes, make up. Trabajo por catálogo y con stock. Soy Cosmetóloga, puedo asesorarte para adaptar tu compra a tu necesidad. Laboratorio LACA, empresa argentina dedicada al servicio integral de la belleza, avalados por normas de calidad y con principios activos innovadores.",
+  "descripcionLarga": "VENTA de productos de cosmética profesional. Cuidado de las piel, perfumes, make up. \nTrabajo por catálogo y con stock. Soy Cosmetóloga, puedo asesorarte para adaptar tu compra a tu necesidad.\nLaboratorio LACA, empresa argentina dedicada al servicio integral de la belleza, avalados por normas de calidad y con principios activos innovadores.",
   "categoria": "Comerciantes",
   "haceEnvios": false,
   "urgencias": false
@@ -439,7 +439,7 @@
   "instagram": "",
   "descripcionCorta": "Diseño y personalización creativa | Productos únicos hechos a tu medida.",
   "descripcionLarga": "CREARTE DG nos inspira a transformar ideas en productos únicos y llenos de identidad. Somos un emprendimiento de diseño y personalización que combina creatividad, tecnología y atención al detalle para hacer realidad lo que imaginás. Ofrecemos una amplia variedad de artículos personalizados: stickers, etiquetas, tarjetas personales, tags, tazas, agendas, imanes, llaveros, remeras, mates y mucho más. Cada pieza se diseña con dedicación, ya sea con nuestros propios diseños o los del cliente, buscando siempre que el resultado refleje su estilo, marca o historia. Porque creemos que los detalles marcan la diferencia, hacemos de cada creación algo especial, funcional y 100% personalizado.",
-  "categoria": "Comerciantes",
+  "categoria": "Comerciante",
   "haceEnvios": false,
   "urgencias": false
 },
@@ -657,13 +657,13 @@
   "nombre": "SL Marketing",
   "direccion": "",
   "telefono": "2473407680",
-  "fotoPerfil": "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/foto-perfil.jpg",
+  "fotoPerfil": "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/foto-perfil.jpg",
   "fotos": [
-    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/1.jpg",
-    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/2.jpg",
-    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/3.jpg",
-    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/4.jpg",
-    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/5.jpg"
+    "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/5.jpg"
   ],
   "facebook": "https://www.facebook.com/silvana.lallana/",
   "instagram": "https://www.instagram.com/slmarketing.redes/",
@@ -689,7 +689,7 @@
   "instagram": "https://www.instagram.com/protegidotaller/",
   "descripcionCorta": "Productos de limpieza hechos con inclusión 💙 Calidad, compromiso y delivery en Taller Protegido Colón.",
   "descripcionLarga": "Taller Protegido Colón es un espacio de trabajo inclusivo y solidario dedicado a la venta de productos y accesorios para limpieza, elaborados con compromiso y dedicación por adultos con discapacidad.\nOfrecen una amplia variedad de artículos: bolsas de residuos (familiares y de consorcio), escobillones, rejillas y trapos de piso, todos confeccionados con calidad y cuidado en cada detalle.\nPodés visitar su salón de ventas en calle 11 entre 50 y 51 (Colón), de lunes a viernes de 8 a 13 hs, o aprovechar su servicio de delivery activo los martes y jueves por la mañana.\nCon cada compra, colaborás con la inclusión laboral y el desarrollo personal de quienes forman parte del taller. ✨ Productos con propósito. Calidad, trabajo y compromiso social.\n\n",
-  "categoria": "Comerciantes",
+  "categoria": "Comerciante",
   "haceEnvios": false,
   "urgencias": false
 },
@@ -699,11 +699,11 @@
   "telefono": "2473409044",
   "fotoPerfil": "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/foto-perfil.jpg",
   "fotos": [
-    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/1.png",
-    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/2.png",
-    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/3.png",
-    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/4.png",
-    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/5.png"
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/1.jpg",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/2.jpg",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/3.jpg",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/4.jpg",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/5.jpg"
   ],
   "facebook": "",
   "instagram": "https://www.instagram.com/tecnopisoscolon/",
@@ -729,7 +729,7 @@
   "instagram": "https://www.instagram.com/es_zanito/",
   "descripcionCorta": "Huevos libres, yerba orgánica y miel pura — productos naturales con envíos sin cargo 🌿",
   "descripcionLarga": "Estela nos ofrece una propuesta natural, consciente y llena de sabor. En su emprendimiento, combina la frescura de huevos de gallinas libres, la energía auténtica de una yerba orgánica, y la dulzura incomparable de la miel pura, productos elegidos con amor y respeto por la naturaleza. Además, suma accesorios prácticos como hueveras deslizantes y omeleteras para microondas, ideales para hacer tu cocina más cómoda y sustentable.\nCon envíos sin cargo y atención personalizada, Estela acerca calidad, bienestar y conciencia ecológica a tu mesa. Visitá su espacio y descubrí todo lo que la naturaleza tiene para ofrecerte.\n",
-  "categoria": "Gastronomia",
+  "categoria": "Gastronomico",
   "haceEnvios": true,
   "urgencias": false
 },
@@ -907,7 +907,7 @@
   "instagram": "https://www.instagram.com/marla.aromas/",
   "descripcionCorta": "Sahumerios, aromas y decoración sensorial. Energía positiva en cada rincón de tu hogar.",
   "descripcionLarga": "Marla nos ofrece un espacio pensado para despertar los sentidos. En su local encontrarás sahumerios, difusores, home spray, esencias, hornitos, lámparas de sal, humidificadores, esferas de cristal y porta sahumerios hechos a mano. Cada producto está seleccionado o creado para transformar ambientes y generar armonía en el hogar. Participan en ferias locales, compartiendo su pasión por el bienestar y la energía positiva. Además, realizan envíos a domicilio para que puedas disfrutar de tus aromas favoritos donde estés. Ideal para quienes buscan equilibrio, relajación y decoración con propósito.",
-  "categoria": "Comerciantes",
+  "categoria": "Comerciante",
   "haceEnvios": true,
   "urgencias": false
 },
@@ -1007,69 +1007,8 @@
   "instagram": "https://www.instagram.com/laestrella.colon/",
   "descripcionCorta": "Artículos de limpieza, aromatizantes y decoración para el hogar. Todo lo que tu casa necesita.",
   "descripcionLarga": "La Estrella nos ofrece una experiencia completa para mantener tu hogar impecable y con estilo. En su tienda vas a encontrar artículos de limpieza de alta calidad, aromatizantes de marcas reconocidas como Saphirus e Iluminarte, y productos de decoración para el hogar y textiles que combinan funcionalidad con estética. Cada producto está pensado para facilitar tu día a día y aportar detalles que transforman tus espacios, desde la limpieza diaria hasta la decoración de ambientes especiales. Con atención cercana y asesoramiento personalizado, La Estrella es la opción ideal para quienes buscan cuidar su hogar con productos confiables, prácticos y de buen gusto.",
-  "categoria": "Comerciantes",
+  "categoria": "Comerciante",
   "haceEnvios": true,
-  "urgencias": false
-},
-{ "id": "amordulce",
-  "nombre": "Amor Dulce",
-  "direccion": "",
-  "telefono": "2473417479",
-  "fotoPerfil": "https://microemprendedores.com.ar/img/AMOR-DULCE/FOTOS/foto-perfil.jpg",
-  "fotos": [
-    "https://microemprendedores.com.ar/img/AMOR-DULCE/FOTOS/1.jpg",
-    "https://microemprendedores.com.ar/img/AMOR-DULCE/FOTOS/2.jpg",
-    "https://microemprendedores.com.ar/img/AMOR-DULCE/FOTOS/3.jpg",
-    "https://microemprendedores.com.ar/img/AMOR-DULCE/FOTOS/4.jpg",
-    "https://microemprendedores.com.ar/img/AMOR-DULCE/FOTOS/5.jpg"
-  ],
-  "facebook": "",
-  "instagram": "https://www.instagram.com/amordulcee2025/",
-  "descripcionCorta": "Repostería casera y tartas artesanales. Delicias dulces, frescas y hechas con amor.",
-  "descripcionLarga": "Amor Dulce nos invita a disfrutar del sabor casero en cada bocado. Su creadora elabora una gran variedad de delicias artesanales: tartas dulces por encargue, bizcochuelos de vainilla, chips, marmolado, naranja o chocolate, pastafrolas de dulce de leche, membrillo o batata, galletitas, cupcakes, budines y el clásico chocoflan o flan casero. Todo se prepara con ingredientes frescos y mucho amor, manteniendo ese toque hogareño que solo la pastelería artesanal puede ofrecer. También podés conseguir bandejitas materas surtidas o porciones individuales, ideales para compartir o darte un gusto. Realiza envíos en bici y, si preferís, podés encontrarla los días de feria en la plaza, con su sonrisa y el aroma irresistible de lo recién horneado.",
-  "categoria": "Gastronomia",
-  "haceEnvios": true,
-  "urgencias": false
-},
-{
-  "id": "pyc",
-  "nombre": "PyC Polirrubros",
-  "direccion": "127 y 48 - COlón",
-  "telefono": "2473454403",
-  "fotoPerfil": "https://microemprendedores.com.ar/img/PYC-POLIRRUBROS/FOTOS/foto-perfil.jpg",
-  "fotos": [
-    "https://microemprendedores.com.ar/img/PYC-POLIRRUBROS/FOTOS/1.jpg",
-    "https://microemprendedores.com.ar/img/PYC-POLIRRUBROS/FOTOS/2.jpg",
-    "https://microemprendedores.com.ar/img/PYC-POLIRRUBROS/FOTOS/3.jpg",
-    "https://microemprendedores.com.ar/img/PYC-POLIRRUBROS/FOTOS/4.jpg",
-    "https://microemprendedores.com.ar/img/PYC-POLIRRUBROS/FOTOS/5.jpg"
-  ],
-  "facebook": "https://www.facebook.com/polirrubro.pyc",
-  "instagram": "",
-  "descripcionCorta": "Productos de limpieza, papelería y más, con envíos sin cargo y atención cercana. ¡Conocé PyC!",
-  "descripcionLarga": "PyC Polirrubros nos ofrece una propuesta práctica y cercana para el día a día: un espacio donde encontrás todo lo que necesitás en un solo lugar. Desde productos de limpieza sueltos —como jabón líquido, suavizantes, detergente, lavandina y cloro— hasta artículos de papelería, bandejas plásticas, cajas para pizza y hasta alimentos para perros y gatos. También suman una línea de condimentos sueltos, pensada para quienes buscan comodidad y buenos precios.\nCon apenas tres meses de historia, PyC Polirrubros ya se destaca por su atención personalizada, su compromiso con el cliente y por ofrecer envíos sin cargo, algo que hace más fácil mantener tu casa o tu emprendimiento siempre abastecido.\nPodés seguirlos en Instagram como @polirubropyc y descubrir por qué cada vez más vecinos eligen comprar local, práctico y con buena onda.",
-  "categoria": "Comerciantes",
-  "haceEnvios": true,
-  "urgencias": false
-},
-{ "id": "dulceaventura",
-  "nombre": "Dulce Aventura",
-  "direccion": "",
-  "telefono": "2473532857",
-  "fotoPerfil": "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/foto-perfil.jpg",
-  "fotos": [
-    "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/1.jpg",
-    "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/2.jpg",
-    "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/3.jpg",
-    "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/4.jpg",
-    "https://microemprendedores.com.ar/img/DULCE-AVENTURA/FOTOS/5.jpg"
-  ],
-  "facebook": "",
-  "instagram": "https://www.instagram.com/somosdulceaventura/",
-  "descripcionCorta": "Carrito golosinero para cumpleaños y eventos. ¡Endulzá tus fiestas con Dulce Aventura! 🎉🍬",
-  "descripcionLarga": "Dulce Aventura nos invita a vivir una experiencia mágica y llena de color con su carrito golosinero ideal para cualquier tipo de evento. Cumpleaños, fiestas temáticas, reuniones familiares o eventos empresariales: cada ocasión se transforma en un momento especial gracias a su propuesta dulce, personalizada y visualmente encantadora.\nDetrás de cada presentación hay una cuidada selección de golosinas, una ambientación pensada al detalle y una atención que combina creatividad, alegría y cercanía. Con Dulce Aventura, los festejos se vuelven inolvidables: no solo endulzan los eventos, sino que también suman ese toque decorativo y fotogénico que todos buscan.\nUna opción ideal para quienes quieren sorprender a sus invitados y crear recuerdos con sabor a felicidad.",
-  "categoria": "Gastronomia",
-  "haceEnvios": false,
   "urgencias": false
 }
 
@@ -1083,6 +1022,4 @@
 
 
 
-
   ]
-

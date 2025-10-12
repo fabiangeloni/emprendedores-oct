@@ -35,7 +35,7 @@
             <div class="header-search-desktop">
                 <form id="form-buscador">
                     <div class="search-box">
-                        <input id="buscador" type="text" placeholder="Buscar emprendedor..." class="search-input">
+                        <input id="buscador" type="text" placeholder="Buscar emprendedor..." class="search-input buscador">
                         <button class="search-btn"><i class="fas fa-search"></i></button>
                     </div>
                 </form>
@@ -53,6 +53,20 @@
 
                                 
                             </div>
+        </div>
+        <!-- BARRA DE BÚSQUEDA MÓVIL (Expandible) -->
+        <div class="header-search-mobile" id="searchMobile">
+            <div class="search-mobile-wrapper">
+                <form class="flexform">
+                <input type="text" placeholder="Buscar..." class="search-input-mobile buscador">
+                <button class="search-btn-mobile">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="search-close-mobile" id="btnCloseMobile">
+                    <i class="fas fa-times"></i>
+                </button>
+            </form>
+            </div>
         </div>
     </header>
 
@@ -209,6 +223,7 @@
        
 
 <script src="JS/json.js"></script>
+<script src="JS/script.js"></script>
 
 </body>
 </html>
