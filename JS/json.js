@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Referencias DOM
   const contenedor = document.getElementById("tarjetas-container");
-  const buscador = document.getElementById("buscador");
-  const form = document.getElementById("form-buscador");
+  const buscadores = document.querySelectorAll(".buscador"); // ambos inputs
   const botones = document.querySelectorAll(".filtro-btn");
   const tituloTarjetas = document.getElementById("titulo-tarjetas");
 
-  if (!contenedor || !buscador || !form || !tituloTarjetas) {
+  if (!contenedor || !buscadores.length || !tituloTarjetas) {
     console.error('Faltan elementos clave en el DOM');
     return;
   }
@@ -57,8 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Función de filtrado por texto y categoría
-  function aplicarFiltros() {
-    const texto = buscador.value.toLowerCase();
+  function aplicarFiltros(valorInput) {
+    const texto = valorInput.toLowerCase();
     const filtradas = empresas.filter(emp => {
       const coincideCategoria = filtroCategoria === "todas" || (emp.categoria && emp.categoria.toLowerCase() === filtroCategoria);
       const coincideTexto = Object.values(emp).some(valor => {
@@ -82,21 +81,19 @@ document.addEventListener("DOMContentLoaded", () => {
       empresas = data;
       mostrarTarjetas(empresas);
 
-      // Filtrado al enviar formulario
-      form.addEventListener("submit", e => {
-        e.preventDefault(); // evita recargar página
-        aplicarFiltros();
+      // Filtrado en tiempo real para ambos buscadores
+      buscadores.forEach(input => {
+        input.addEventListener("input", e => aplicarFiltros(e.target.value));
       });
-
-      // Filtrado en tiempo real al escribir
-      buscador.addEventListener("input", aplicarFiltros);
 
       // Filtrado por botones de categoría
       botones.forEach(btn => {
         btn.addEventListener("click", e => {
           e.preventDefault();
           filtroCategoria = btn.dataset.categoria ? btn.dataset.categoria.toLowerCase() : "todas";
-          aplicarFiltros();
+          // Aplicar filtros usando el valor del primer buscador (o vacío si no escribieron)
+          const valor = buscadores[0].value || "";
+          aplicarFiltros(valor);
         });
       });
     })
