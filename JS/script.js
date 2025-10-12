@@ -1,4 +1,3 @@
-// Esperar a que cargue el DOM
 document.addEventListener('DOMContentLoaded', function () {
 
     /* === MENÚ HAMBURGUESA === */
@@ -6,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerNav = document.getElementById('headerNav');
     const menuOverlay = document.getElementById('menuOverlay');
 
-    // Abrir/cerrar menú
     if (btnHamburger) {
         btnHamburger.addEventListener('click', function () {
             btnHamburger.classList.toggle('active');
@@ -16,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Cerrar al hacer clic en overlay
     if (menuOverlay) {
         menuOverlay.addEventListener('click', function () {
             btnHamburger.classList.remove('active');
@@ -26,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Cerrar al hacer clic en un link
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
@@ -42,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchMobile = document.getElementById('searchMobile');
     const btnCloseMobile = document.getElementById('btnCloseMobile');
 
-    // Abrir búsqueda móvil
     if (btnSearchMobile) {
         btnSearchMobile.addEventListener('click', function () {
             searchMobile.classList.add('active');
@@ -52,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Cerrar búsqueda móvil
     if (btnCloseMobile) {
         btnCloseMobile.addEventListener('click', function () {
             searchMobile.classList.remove('active');
@@ -61,28 +55,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /* === HEADER STICKY CON EFECTO SCROLL === */
     const header = document.querySelector('.header-profesional');
-    let lastScroll = 0;
-
     window.addEventListener('scroll', function () {
         const currentScroll = window.pageYOffset;
-
         if (currentScroll > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
-
-        lastScroll = currentScroll;
     });
 
     /* === FUNCIÓN DE BÚSQUEDA === */
     function realizarBusqueda(input) {
-        const termino = input.value.trim();
-        if (termino !== '') {
-            console.log('Buscando:', termino);
-            // Redirigir o filtrar resultados
-            window.location.href = `index2.html?buscar=${encodeURIComponent(termino)}`;
-        }
+        const termino = input.value.trim().toLowerCase();
+
+        // Simular el filtrado dinámico (mismo que el input ya hace en vivo)
+        const eventoInput = new Event('input');
+        input.value = termino;
+        input.dispatchEvent(eventoInput);
     }
 
     // === BÚSQUEDA DESKTOP ===
@@ -90,10 +79,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInputDesktop = document.querySelector('.header-search-desktop .search-input');
 
     if (searchBtnDesktop && searchInputDesktop) {
-        searchBtnDesktop.type = 'button'; // 🔹 evita que se envíe el form
+        searchBtnDesktop.type = 'button';
         searchBtnDesktop.addEventListener('click', () => realizarBusqueda(searchInputDesktop));
         searchInputDesktop.addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') realizarBusqueda(searchInputDesktop);
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                realizarBusqueda(searchInputDesktop);
+            }
         });
     }
 
@@ -102,10 +94,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInputMobile = document.querySelector('.search-input-mobile');
 
     if (searchBtnMobile && searchInputMobile) {
-        searchBtnMobile.type = 'button'; // 🔹 evita que se envíe el form
+        searchBtnMobile.type = 'button';
         searchBtnMobile.addEventListener('click', () => realizarBusqueda(searchInputMobile));
         searchInputMobile.addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') realizarBusqueda(searchInputMobile);
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                realizarBusqueda(searchInputMobile);
+            }
         });
     }
 });
