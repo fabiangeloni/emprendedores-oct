@@ -2,12 +2,12 @@
         // Esperar a que cargue el DOM
         document.addEventListener('DOMContentLoaded', function () {
 
-            /* === MENÚ HAMBURGUESA === */
+            /* === MENÃš HAMBURGUESA === */
             const btnHamburger = document.getElementById('btnHamburger');
             const headerNav = document.getElementById('headerNav');
             const menuOverlay = document.getElementById('menuOverlay');
 
-            // Abrir/cerrar menú
+            // Abrir/cerrar menÃº
             if (btnHamburger) {
                 btnHamburger.addEventListener('click', function () {
                     btnHamburger.classList.toggle('active');
@@ -38,12 +38,12 @@
                 });
             });
 
-            /* === BÚSQUEDA MÓVIL === */
+            /* === BÃšSQUEDA MÃ“VIL === */
             const btnSearchMobile = document.getElementById('btnSearchMobile');
             const searchMobile = document.getElementById('searchMobile');
             const btnCloseMobile = document.getElementById('btnCloseMobile');
 
-            // Abrir búsqueda móvil
+            // Abrir bÃºsqueda mÃ³vil
             if (btnSearchMobile) {
                 btnSearchMobile.addEventListener('click', function () {
                     searchMobile.classList.add('active');
@@ -53,7 +53,7 @@
                 });
             }
 
-            // Cerrar búsqueda móvil
+            // Cerrar bÃºsqueda mÃ³vil
             if (btnCloseMobile) {
                 btnCloseMobile.addEventListener('click', function () {
                     searchMobile.classList.remove('active');
@@ -77,17 +77,17 @@
                 lastScroll = currentScroll;
             });
 
-            /* === REALIZAR BÚSQUEDA === */
+            /* === REALIZAR BÃšSQUEDA ===
             function realizarBusqueda(input) {
                 const termino = input.value.trim();
                 if (termino !== '') {
                     console.log('Buscando:', termino);
-                    // Aquí puedes redirigir o filtrar
+                    // AquÃ­ puedes redirigir o filtrar
                     window.location.href = `index2.html?buscar=${encodeURIComponent(termino)}`;
                 }
-            }
+            } */
 
-            // Búsqueda desktop
+            // BÃºsqueda desktop
             const searchBtnDesktop = document.querySelector('.header-search-desktop .search-btn');
             const searchInputDesktop = document.querySelector('.header-search-desktop .search-input');
 
@@ -98,7 +98,7 @@
                 });
             }
 
-            // Búsqueda móvil
+            // BÃºsqueda mÃ³vil
             const searchBtnMobile = document.querySelector('.search-btn-mobile');
             const searchInputMobile = document.querySelector('.search-input-mobile');
 
