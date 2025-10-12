@@ -355,6 +355,7 @@ body.menu-open {
     outline: none;
     font-family: inherit;
     transition: all var(--transition);
+    min-width: 70vw;
 }
 
     .search-input-mobile:focus {
@@ -1827,5 +1828,7 @@ cubic-bezier(.4, 1, .4, 1.1);
         display: block;
     }
 }
+
+.flexform{display: flex;}
 
 
