@@ -136,7 +136,7 @@
   "facebook": "",
   "instagram": "https://www.instagram.com/ceciangeloni/",
   "descripcionCorta": "Cuidado de la piel, make up y asesoramiento personalizado.",
-  "descripcionLarga": "VENTA de productos de cosmética profesional. Cuidado de las piel, perfumes, make up. \nTrabajo por catálogo y con stock. Soy Cosmetóloga, puedo asesorarte para adaptar tu compra a tu necesidad.\nLaboratorio LACA, empresa argentina dedicada al servicio integral de la belleza, avalados por normas de calidad y con principios activos innovadores.",
+  "descripcionLarga": "Venta de productos de cosmética profesional. Cuidado de la piel, perfumes, make up. Trabajo por catálogo y con stock. Soy Cosmetóloga, puedo asesorarte para adaptar tu compra a tu necesidad. Laboratorio LACA, empresa argentina dedicada al servicio integral de la belleza, avalados por normas de calidad y con principios activos innovadores.",
   "categoria": "Comerciantes",
   "haceEnvios": false,
   "urgencias": false
@@ -657,13 +657,13 @@
   "nombre": "SL Marketing",
   "direccion": "",
   "telefono": "2473407680",
-  "fotoPerfil": "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/foto-perfil.jpg",
+  "fotoPerfil": "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/foto-perfil.jpg",
   "fotos": [
-    "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/1.jpg",
-    "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/2.jpg",
-    "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/3.jpg",
-    "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/4.jpg",
-    "https://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/5.jpg"
+    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/1.jpg",
+    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/2.jpg",
+    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/3.jpg",
+    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/4.jpg",
+    "http://microemprendedores.com.ar/img/SL-MARKETING/FOTOS/5.jpg"
   ],
   "facebook": "https://www.facebook.com/silvana.lallana/",
   "instagram": "https://www.instagram.com/slmarketing.redes/",
@@ -699,11 +699,11 @@
   "telefono": "2473409044",
   "fotoPerfil": "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/foto-perfil.jpg",
   "fotos": [
-    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/1.jpg",
-    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/2.jpg",
-    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/3.jpg",
-    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/4.jpg",
-    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/5.jpg"
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/1.png",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/2.png",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/3.png",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/4.png",
+    "https://microemprendedores.com.ar/img/TECNOPISOS/FOTOS/5.png"
   ],
   "facebook": "",
   "instagram": "https://www.instagram.com/tecnopisoscolon/",
@@ -1022,4 +1022,6 @@
 
 
 
+
   ]
+
