@@ -119,27 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 
-        /* === B�SQUEDA M�VIL === */
-        const btnSearchMobile = document.getElementById('btnSearchMobile');
-        const searchMobile = document.getElementById('searchMobile');
-        const btnCloseMobile = document.getElementById('btnCloseMobile');
-
-        // Abrir b�squeda m�vil
-        if (btnSearchMobile) {
-            btnSearchMobile.addEventListener('click', function () {
-                searchMobile.classList.add('active');
-                setTimeout(() => {
-                    document.querySelector('.search-input-mobile').focus();
-                }, 300);
-            });
-    }
-
-        // Cerrar b�squeda m�vil
-        if (btnCloseMobile) {
-            btnCloseMobile.addEventListener('click', function () {
-                searchMobile.classList.remove('active');
-            });
-    }
+      
 
         /* === HEADER STICKY CON EFECTO SCROLL === */
         const header = document.querySelector('.header-profesional');
